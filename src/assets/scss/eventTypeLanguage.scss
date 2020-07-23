@@ -1,0 +1,186 @@
+/**
+ * Event Type Language
+ */
+
+.eventTypeLanguage-description {
+  padding-top: 2px;
+  padding-left: 40px;
+  font-size: 0.9rem;
+}
+
+.eventTypeLanguage-contents {
+  padding-top: 10px;
+  padding-bottom: 80px;
+
+  .eventTypeLanguage-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+
+    font-size: 1.2rem;
+    font-family: 'Poppins Bold';
+    font-weight: bold;
+    color: $color-employees;
+
+    @include responsive(lapTablet) {
+      padding-left: 0;
+    }
+  }
+
+  .language-padding {
+    padding-top: 30px;
+  }
+
+  .eventTypeLanguage-card {
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: #000000;
+    background-color: #ffffff;
+
+    .eventTypeLanguage-title-padding {
+      padding: 30px 10px 30px 40px;
+
+      @include responsive(lapDeskTop) {
+        padding: 17px 10px;
+      }
+
+      @include responsive(lapTablet) {
+        padding: 17px 10px;
+      }
+    }
+  }
+
+  .eventTypeLanguage-padding {
+    padding: 20px 15px;
+
+    @include responsive(lapTablet) {
+      padding: 17px 10px;
+    }
+
+    .eventTypeLanguage-option, .eventTypeLanguage-option-left {
+      padding-left: 10px;
+      border: none;
+      border-bottom: 2px solid gray;
+      width: 100%;
+      height: 40px;
+      font-weight: 100;
+      color: gray;
+    }
+
+    .eventTypeLanguage-option {
+      text-align: right;
+    }
+  }
+
+  /**
+   * Button
+   */
+  .btn-padding {
+    margin: 0 auto;
+    padding-top: 70px;
+
+    .btn-save {
+      margin-left: 5px;
+      margin-bottom: 15px;
+
+      padding: 20px 12px;
+      border: 2px solid #4743ed;
+      width: 22%;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-family: 'Poppins Bold';
+      font-weight: bold;
+
+      display: inline-block;
+      float: right;
+      color: #ffffff;
+      background-color: #4743ed;
+      cursor: pointer;
+
+      @include responsive(lapDeskTop) {
+        width: 40%;
+      }
+
+      @include responsive(lapTablet) {
+        width: 45%;
+      }
+
+      @include responsive(phone) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+      }
+    }
+
+    .btn-save:hover {
+      color: #000000;
+      background-color: #e7e7f3;
+    }
+  }
+
+  /**
+  * CheckBox
+  */
+  .container-event {
+    display: block;
+    position: relative;
+    padding-top: 3px;
+    padding-left: 35px;
+    font-size: 0.9rem;
+    color: #000000;
+    cursor: pointer;
+  }
+
+  .container-event input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkMark {
+    position: absolute;
+    border: 1px solid #4743ed;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff;
+  }
+
+  .checkMark-gray {
+    background-color: #e7e7f3;
+  }
+
+  .container-event:hover input ~ .checkMark {
+    background-color: #4743ed;
+  }
+
+  .container-event input:checked ~ .checkMark {
+    background-color: #4743ed;
+  }
+
+  .checkMark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .container-event input:checked ~ .checkMark:after {
+    display: block;
+  }
+
+  .container-event .checkMark:after {
+    left: 7px;
+    top: 5px;
+    width: 5px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}

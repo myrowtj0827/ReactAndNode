@@ -1,0 +1,58 @@
+/**
+ * Edit Page of the Company
+ */
+$padding-employees: 20px;
+$color-employees: #4743ed;
+.event-details-btn-contents {
+  padding-top: 20px;
+  padding-bottom: 15px;
+
+  /**
+ * Button
+ */
+  .btn-padding {
+    margin: 0 auto;
+    padding-top: 0;
+
+   .btn-save {
+      margin-right: 5px;
+      margin-left: 5px;
+      margin-bottom: 15px;
+
+      padding: 17px 12px;
+      border: 2px solid #4743ed;
+      width: 22%;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-family: 'Poppins Bold';
+      font-weight: bold;
+
+      display: inline-block;
+      color: #ffffff;
+      background-color: #4743ed;
+      cursor: pointer;
+
+      @include responsive(desktop) {
+        padding: 14px 12px;
+      }
+
+      @include responsive(lapDeskTop) {
+        padding: 12px 9px;
+        width: 35%;
+      }
+
+      @include responsive(lapTablet) {
+        width: 45%;
+        float: none;
+      }
+    }
+
+    .btn-save:hover {
+      color: #4743ed;
+      background-color: #e7e7f3;
+    }
+  }
+}
+
+

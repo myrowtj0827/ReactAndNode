@@ -1,0 +1,195 @@
+@media screen and (min-width: 720px) {
+    .reg-width{
+      width: 50%;
+   }
+
+   .center-container {
+    width: 30%;
+   }
+}
+
+.custom-input {
+    border-top: none!important;
+    border-left: none!important;
+    border-right: none!important;
+    border-bottom: solid lightgrey 2px;
+    border-radius: 0 !important;
+    background: inherit;
+    padding: 20px 0 15px 0;
+}
+
+.text-seperator {
+    //color: grey;
+    padding: 7px;
+    font-size: 14px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.link-attribute {
+   color: rgb(83,1,236);
+}
+
+.extra-width {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px !important;
+    font-family: 'Poppins Bold';
+}
+
+.company-registration-text {
+       
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 17.5px !important;
+    font-family: 'Poppins Bold'; 
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+    @include responsive(tablet) {
+        flex-direction: row-reverse !important;
+    }
+}
+
+.max-width100 {
+    margin: 0 auto 15px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.forgot-password {
+    color: rgb(83,1,236); 
+    margin-bottom: 30px;
+    font-size: 12px !important;
+}
+
+.forgot-password:hover {
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+.link-hover {
+    color: rgb(83,1,236);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.d-flex {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-div {
+    @extend .navbar;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: absolute;
+    top: 10%;
+
+    width: 100%;
+    .search__block{
+        margin: 0!important;
+    }
+}
+
+.banner-img {
+    height: 350px;
+    width: 100%;
+
+    @include responsive(lapDeskTop) {
+        height: 250px;
+    }
+
+    @include responsive(tablet) {
+        height: 100px;
+    }
+
+    @include responsive(phoneTablet) {
+        height: 60px;
+    }
+}
+
+.help-container {
+    width: 60vw;
+    letter-spacing: 0;
+    @include responsive(tablet){
+        width: 100vw;
+    }
+    @include responsive(mobile){
+        width: 100vw;
+    }
+
+    .help-card {
+        display: block;
+        background: #FFFFFF;
+        width: 200px;
+        height: 150px;
+        border-radius: 2px;
+        margin: 10px;
+        display: inline-block;;
+        transition: all .25s linear;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        cursor:pointer;
+    }
+      
+  .help-card:hover {
+    box-shadow: 0 10px 20px 0 rgba(71, 67, 237, 0.2);
+  }
+}
+
+.slick-prev:before, .slick-next:before {
+    color: rgb(83,1,236);
+}
+
+.slick-container {
+    width: 60vw;
+    margin-left: 20vw;
+
+    .slick-card {
+        display: block;
+        border-bottom: solid red 5px;
+        background: rgb(240,240,240);
+        width: 18vw;
+        height: 150px;
+        border-radius: 2px;
+        margin: 10px;
+        display: inline-block;;
+        transition: all .25s linear;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+}
+  
+ .question-header {
+     font-size: 16px;
+ }
+
+ .question-body {
+    font-family: 'Poppins Regular';
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.small-text {
+    font-size: 12px;
+}
+

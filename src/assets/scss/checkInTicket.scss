@@ -1,0 +1,241 @@
+/**
+ * Check-In-Ticket Page of the Company
+ */
+$padding-ticket: 20px;
+$color-ticket: #4743ed;
+
+.ticket-contents {
+  .ticket-card {
+    margin-top: 40px;
+    font-size: 1rem;
+    background-color: #fafafa;
+
+    @include responsive(lapTablet) {
+      .w3-bar .w3-bar-item {
+        float: none;
+        text-align: center;
+      }
+    }
+
+    @include responsive(lapTablet) {
+      margin-top: 35px;
+    }
+
+    @include responsive(phone) {
+      margin-top: 30px;
+      font-size: 0.9rem;
+    }
+
+    .ticket-padding {
+      padding: 38px 46px 38px 38px;
+      font-size: 0.8rem;
+      font-weight: bold;
+
+      @include responsive(lapDeskTop) {
+        padding: 15px 15px 15px 15px;
+        font-size: 0.7rem;
+
+        .w3-bar .w3-bar-item {
+          padding: 8px;
+        }
+      }
+
+      @include responsive(lapTablet) {
+        .w3-center .w3-bar {
+          width: 100%;
+        }
+      }
+
+      .ticket-card-bg {
+        padding-top: 45px;
+        padding-bottom: 55px;
+        background-color: #858585;
+
+        .box {
+          margin: 0 auto;
+          width: 35%;
+          background-color: #fafafa;
+        }
+
+        .box:before {
+          content: "";
+          display: block;
+          padding-top: 100%;
+        }
+      }
+
+      .ticket-scan,
+      .txt-hover,
+      .ticket-or
+      {
+        font-family: 'Poppins Bold';
+      }
+
+      .ticket-scan {
+        padding-top: 30px;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      .ticket-hide {
+        display: none;
+      }
+
+      .txt-hover:hover {
+        border-bottom: 2px solid #4743ed;
+        cursor: pointer;
+      }
+
+      .ticket-enter-padding {
+        padding-top: 20px;
+
+        .ticket-enter {
+          background-color: #4743ed;
+          cursor: pointer;
+
+          .w3-bar .w3-bar-item {
+            padding: 0;
+          }
+
+          .modal {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1050;
+            display: none;
+            overflow: hidden;
+            outline: 0;
+            -webkit-overflow-scrolling: touch;
+          }
+
+          .modal-dialog {
+            margin: 10px;
+            position: relative;
+            width: auto;
+          }
+
+          .modal-content {
+            position: relative;
+            background-color: #ffffff;
+            background-clip: padding-box;
+          }
+
+          .modal-header {
+            padding: 0 15px 15px;
+            border-bottom: none;
+          }
+
+          .close {
+            font-size: 30px;
+            font-weight: 700;
+            opacity: 1;
+            color: #ffffff;
+
+            @include responsive(phone) {
+              display: none;
+            }
+          }
+
+          .modal-header .close {
+            margin-top: 0;
+            background-color: #4743ed;
+          }
+
+          .modal-body {
+            padding: 10px 20% 60px 17%;
+            position: relative;
+            font-size: 0.9rem;
+
+            @include responsive(phoneTablet) {
+              padding: 10px 20px 30px;
+            }
+
+            .icon-approved {
+              padding-bottom: 10px;
+              width: 100%;
+              max-width: 40px;
+            }
+
+            .modal-bold-medium-font,
+            .modal-bold-font,
+            .modal-bold-small-font,
+            .modal-event-small-font
+            {
+              font-family: 'Poppins Bold';
+              font-weight: bold;
+            }
+
+            .modal-bold-medium-font {
+              padding-bottom: 35px;
+              font-size: 0.9rem;
+            }
+
+            .modal-bold-font {
+              padding-bottom: 20px;
+              font-size: 1.2rem;
+            }
+
+            .modal-bold-small-font {
+              padding-top: 7px;
+              padding-bottom: 1px;
+              font-size: 0.8rem;
+            }
+
+            .modal-event-small-font {
+              padding-top: 2px;
+              font-size: 0.8rem;
+            }
+
+            .modal-small-font {
+              padding-bottom: 15px;
+              font-size: 0.8rem;
+              font-weight: 100;
+            }
+
+            .modal-tiny-font {
+              font-size: 0.7rem;
+              font-weight: 100;
+            }
+          }
+
+          @media(min-width:544px) {
+            .modal-dialog {
+              margin-top: 30px;
+              margin-left: 19%;
+              max-width: 52%;
+            }
+          }
+
+          .modal-position {
+            padding-top: 345px;
+
+            .modal-content {
+              width: 100%;
+              max-width: 980px;
+            }
+          }
+        }
+
+        .button {
+          padding: 8px 32px;
+          border: none;
+          text-align: center;
+          text-decoration: none;
+          font-size: 16px;
+          display: inline-block;
+          color: white;
+          background-color: #4743ed;
+          cursor: pointer;
+        }
+      }
+
+      @include responsive(phoneTablet) {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
+}
+

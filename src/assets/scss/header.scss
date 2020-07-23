@@ -1,0 +1,378 @@
+.navbar {
+  height: 120px;
+  padding: 0 7.5vw;
+  display: flex;
+  align-items: center;
+
+  @include responsive(phone) {
+    padding: 0 3px !important;
+  }
+
+  ul {
+    //@include responsive(phone) {
+    //  width: 32px !important;
+    //}
+  }
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+
+    .navbar-brand {
+      img {
+        width: 100%;
+        max-width: 159px;
+        height: 100%;
+        max-height: 75px;
+      }
+    }
+  }
+
+  .search__block {
+    width: 25vw;
+    height: 2.5vw;
+    margin-left: 2vw;
+
+    .advanced-search {
+      border: none;
+      width: calc(100% - 3.125vw);
+      height: 2.5vw;
+    }
+
+    .search__btn {
+      width: 3.125vw;
+      height: 2.5vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #4743ed;
+      cursor: pointer;
+
+      i {
+        font-size: 1.5625vw;
+      }
+    }
+  }
+
+  .navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .language-option {
+      width: 145px;
+
+      img {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+    }
+
+    .dropdown-icon {
+      display: flex;
+      width: 14px;
+      height: 7px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        margin: 0;
+      }
+    }
+
+    .burger-menu {
+      display: none;
+      width: 25px;
+      height: 25px;
+      margin-left: 30px;
+
+      @include responsive(phoneTablet) {
+        margin-left: 5px;
+      }
+
+      .bm-burger-button {
+        position: relative;
+        width: 25px;
+        height: 25px;
+
+        .bm-burger-bars {
+          background-color: black;
+        }
+      }
+
+      .bm-overlay {
+        top: 0;
+        left: 0;
+      }
+
+      .bm-menu-wrap {
+        border: none !important;
+        width: 140px !important;
+        height: 100%;
+        max-height: 125px;
+
+        .w3-dropdown-content {
+          min-width: 135px;
+        }
+
+        .bm-item {
+          font-size: 1.1rem;
+          color: #000000;
+          background-color: #f9f9f9;
+
+          a {
+            padding: 5px 5px 5px 10px;
+          }
+        }
+
+        #menuRight {
+          max-height: 135px;
+        }
+
+        .bm-menu {
+          overflow: hidden !important;
+        }
+      }
+
+      @include responsive(tablet) {
+        display: block;
+      }
+
+      #signin {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+      }
+
+      #signin:hover,
+      #company:hover,
+      #help:hover {
+        background-color: gray;
+      }
+
+      #company {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+      }
+
+      #help {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-top: 1px solid #000000;
+      }
+    }
+  }
+
+  @include responsive(desktop-m) {
+    .search__block {
+      width: 28vw;
+    }
+  }
+
+  @include responsive(desktop-s) {
+    .search__block {
+      width: 30vw;
+    }
+
+    .navbar-nav {
+      .nav-item {
+        margin-left: 1.5em;
+
+        a {
+          font-size: 14px;
+        }
+      }
+
+      .language-option {
+        width: 140px;
+
+        img {
+          width: 18px;
+          height: 18px;
+          margin-right: 8px;
+        }
+      }
+
+      .dropdown-icon {
+        display: flex;
+        width: 14px;
+        height: 7px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  @include responsive(desktop-xs) {
+    //height: 55px;
+    padding: 0 5%;
+
+    .search__block {
+      //width: 25%;
+      height: 32px;
+
+      .advanced-search {
+        width: calc(100% - 32px);
+        height: 32px;
+      }
+
+      .search__btn {
+        width: 32px;
+        height: 32px;
+
+        i {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .navbar-nav {
+      .nav-item {
+        margin-left: 1em;
+      }
+    }
+  }
+
+  @include responsive(tablet) {
+    flex-direction: row !important;
+    justify-content: space-between;
+
+    .search__block {
+      width: 40vw;
+    }
+
+    .nav-left {
+      margin-bottom: 0;
+    }
+
+    .navbar-nav {
+      .language-option {
+        width: 120px;
+
+        img {
+          width: 15px;
+          height: 15px;
+        }
+      }
+
+      .dropdown-icon {
+        display: flex;
+        width: 14px;
+        height: 7px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 0;
+          margin: 0;
+        }
+      }
+
+      .nav-item {
+        display: none;
+      }
+    }
+  }
+
+  @include responsive(phone) {
+    .search__block {
+      width: 36vw;
+    }
+  }
+}
+
+.after-login-menu {
+  display: none;
+  width: 25px;
+  height: 25px;
+  margin-left: 30px;
+
+  @include responsive(phoneTablet) {
+    margin-left: 5px;
+  }
+
+  .bm-burger-button {
+    position: relative;
+    width: 25px;
+    height: 25px;
+
+    .bm-burger-bars {
+      background-color: black;
+    }
+  }
+
+  .bm-overlay {
+    top: 0;
+    left: 0;
+  }
+
+  .bm-menu-wrap {
+    border: none !important;
+    width: 150px !important;
+    height: 100%;
+    max-height: 155px;
+
+    .w3-dropdown-content {
+      min-width: 155px;
+    }
+
+    .menu-item-padding {
+      padding: 10px 5px;
+    }
+
+    .bm-item {
+      font-size: 1.1rem;
+      color: #000000;
+      background-color: #f9f9f9;
+
+      a {
+        padding: 10px 5px 10px 0;
+      }
+    }
+
+    #afterLoginMenuRight {
+      max-height: 135px;
+    }
+
+    .bm-menu {
+      overflow: hidden !important;
+    }
+  }
+
+  @include responsive(tablet) {
+    display: block;
+  }
+
+  #signin {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+
+  #signin:hover,
+  #company:hover,
+  #help:hover {
+    background-color: gray;
+  }
+
+  #company {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+
+  #help {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-top: 1px solid #000000;
+  }
+}

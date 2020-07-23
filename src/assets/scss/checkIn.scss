@@ -1,0 +1,111 @@
+/**
+ * Check In Page
+ */
+
+$color-employees: #4743ed;
+.checkIn-description {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-left: 45px;
+  font-size: 0.8rem;
+
+  @include responsive(lapTablet) {
+    padding-left: 0;
+  }
+}
+
+.checkIn-contents {
+  padding-top: 10px;
+  padding-bottom: 100px;
+
+  .checkIn-card {
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  .card-padding {
+    padding-bottom: 25px;
+
+    .tiny-font {
+      font-size: 0.7rem;
+    }
+  }
+
+  .checkIn-padding {
+    padding: 20px 20px 15px 20px;
+
+    .checkIn-option {
+      padding-left: 20px;
+      border: none;
+      border-bottom: 2px solid gray;
+      width: 100%;
+      height: 40px;
+      font-weight: 100;
+    }
+
+    .table-top-bottom {
+      padding-bottom: 60px;
+    }
+
+    @include responsive(lapTablet) {
+      padding: 20px 10px 15px 10px;
+    }
+  }
+
+  .search-width {
+    width: 100%;
+
+    input {
+      padding-left: 55px;
+      font-size: 1rem;
+      border-bottom: 2px solid gray;
+      color: grey;
+
+      background-image: url('../images/company/search-icon.png');
+      background-repeat: no-repeat;
+      background-size: 25px;
+      background-position: left 10px center;
+    }
+  }
+
+  .attendeeList-bold {
+    padding-bottom: 15px;
+    padding-left: 45px;
+    font-family: 'Poppins Bold';
+
+    @include responsive(lapTablet) {
+      padding-left: 0;
+    }
+  }
+
+  .table-th-bold {
+    font-family: 'Poppins Bold';
+
+    @include responsive(lapTablet) {
+      font-size: 0.6rem;
+    }
+
+    @include responsive(phoneTablet) {
+      font-size: 0.9rem;
+    }
+
+    @include responsive(phone) {
+      font-size: 0.6rem;
+    }
+  }
+
+  .gray-bg {
+    height: 30px;
+    background-color: #e7e7f3;
+  }
+
+  .w3-table th {
+    padding-bottom: 4px;
+
+    @include responsive(lapTablet) {
+      padding: 4px;
+    }
+  }
+}

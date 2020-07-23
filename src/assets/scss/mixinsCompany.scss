@@ -1,0 +1,45 @@
+/**
+ * Responsive Definition Page of the Company
+ */
+
+@mixin responsive($size) {
+  @if $size==desktop {
+    @media (max-width: breakpointsCompany(desktop)) {
+      @content;
+    }
+  }
+
+  @if $size==largeLapTop {
+    @media (max-width: breakpointsCompany(largeLapTop)) {
+      @content;
+    }
+  }
+
+  @else if $size==lapDeskTop {
+    @media (max-width: breakpointsCompany(lapDeskTop)) {
+      @content;
+    }
+  }
+
+  @else if $size==lapTablet {
+    @media (max-width: breakpointsCompany(lapTablet)) {
+      @content;
+    }
+  }
+
+  @else if $size==phoneTablet {
+    @media (max-width: breakpointsCompany(phoneTablet)) {
+      @content;
+    }
+  }
+
+  @else if $size==phone {
+    @media (max-width: breakpointsCompany(phone)) {
+      @content;
+    }
+  }
+}
+
+@function breakpointsCompany($device-width) {
+  @return map-get($breakpointsCompany, $device-width);
+}

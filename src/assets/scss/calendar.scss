@@ -1,0 +1,35 @@
+/**
+ * Calendar Page
+ */
+
+$color-employees: #4743ed;
+.calendar-contents {
+  padding-top: 25px;
+  padding-bottom: 100px;
+
+  .calendar-card {
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  .calendar-padding {
+    padding: 30px 30px 40px 30px;
+  }
+
+  .font-calendar {
+    font-size: 0.9rem;
+  }
+
+  .font-calendar:hover {
+    color: $color-employees;
+    cursor: pointer;
+  }
+
+  .calendar-top {
+    padding-top: 15px;
+  }
+
+
+}

@@ -1,0 +1,159 @@
+/**
+ * Orders Page
+ */
+
+$color-employees: #4743ed;
+.orders-description {
+  padding-top: 10px;
+  padding-bottom: 25px;
+  padding-left: 45px;
+  font-size: 0.9rem;
+
+  @include responsive(lapTablet) {
+    padding-left: 0;
+  }
+}
+
+.orders-contents {
+  padding-top: 10px;
+  padding-bottom: 100px;
+
+  .orders-card {
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  .card-padding {
+    padding-bottom: 30px;
+
+    .tiny-font {
+      font-size: 0.7rem;
+    }
+  }
+
+  .orders-padding {
+    padding: 20px 15px 15px 15px;
+
+    .orders-option {
+      padding-left: 20px;
+      border: none;
+      border-bottom: 2px solid gray;
+      width: 100%;
+      height: 40px;
+      font-weight: 100;
+    }
+  }
+
+  .search-width {
+    width: 100%;
+
+    input {
+      padding-left: 55px;
+      font-size: 1rem;
+      border-bottom: 2px solid gray;
+      color: grey;
+
+      background-image: url('../images/company/search-icon.png');
+      background-repeat: no-repeat;
+      background-size: 25px;
+      background-position: left 10px center;
+    }
+  }
+
+  .order-width {
+    width: 33.3%;
+
+    @include responsive(lapDeskTop) {
+      width: 50%;
+    }
+
+    @include responsive(lapTablet) {
+      width: 100%;
+    }
+  }
+
+  .order-first-padding {
+    padding-right: 20px;
+
+    @include responsive(phoneTablet) {
+      padding-right: 0;
+    }
+
+    @include responsive(lapTablet) {
+      padding-right: 0;
+    }
+  }
+
+  .order-second-padding {
+    padding-right: 10px;
+    padding-left: 10px;
+
+    @include responsive(lapDeskTop) {
+      padding-right: 0;
+    }
+
+    @include responsive(lapTablet) {
+      padding-left: 0;
+    }
+  }
+
+  .order-third-padding {
+    padding-left: 20px;
+
+    @include responsive(lapDeskTop) {
+      padding-right: 20px;
+      padding-left: 0;
+    }
+
+    @include responsive(lapTablet) {
+      padding-right: 0;
+    }
+  }
+
+  .order-forth-padding {
+    padding-right: 20px;
+
+    @include responsive(lapDeskTop) {
+      padding-right: 0;
+      padding-left: 10px;
+    }
+
+    @include responsive(lapTablet) {
+      padding-left: 0;
+    }
+  }
+
+  .order-fifth-padding {
+    padding-right: 10px;
+    padding-left: 10px;
+
+    @include responsive(lapDeskTop) {
+      padding-right: 20px;
+      padding-left: 0;
+    }
+
+    @include responsive(lapTablet) {
+      padding-right: 0;
+    }
+  }
+
+  .order-preview {
+    padding-top: 55px;
+
+    font-size: 0.7rem;
+    font-family: 'Poppins Bold';
+    color: $color-employees;
+    cursor: pointer;
+
+    @include responsive(phoneTablet) {
+      padding-top: 10px;
+      padding-right: 30px;
+    }
+  }
+
+  .txt-gray {
+    color: gray;
+  }
+}

@@ -1,0 +1,269 @@
+/**
+ * Discount page
+ */
+
+.discount-description {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  font-size: 0.9rem;
+
+  @include responsive(lapTablet) {
+    padding-left: 0;
+  }
+}
+
+.discount-contents {
+  padding-top: 10px;
+  padding-bottom: 100px;
+
+  .discount-title {
+    padding-top: 50px;
+    padding-left: 40px;
+
+    font-size: 1.2rem;
+    font-family: 'Poppins Bold';
+    font-weight: bold;
+    color: $color-employees;
+
+    @include responsive(lapTablet) {
+      padding-left: 0;
+    }
+  }
+
+  .discount-card {
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  .discount-padding {
+    padding: 30px 35px;
+
+    @include responsive(lapTablet) {
+      padding: 17px 10px;
+    }
+  }
+
+  .discount-for-padding {
+    padding: 20px 10px 15px 15px;
+
+    @include responsive(lapTablet) {
+      padding: 17px 10px;
+    }
+
+    .discount-option {
+      padding-left: 20px;
+      border: none;
+      border-bottom: 2px solid gray;
+      width: 100%;
+      height: 40px;
+      font-size: 1rem;
+      font-weight: 100;
+      text-align: right;
+      color: gray;
+    }
+
+    .starts-ends-padding {
+      padding: 0 25px 15px 20px;
+
+      .starts-padding {
+        padding-bottom: 7px;
+      }
+
+      .ends-padding {
+        padding-top: 10px;
+        padding-bottom: 7px;
+      }
+
+      .starts-now, .ends-sales {
+        border: none;
+        border: 2px solid gray;
+        width: 100%;
+        height: 85px;
+        font-size: 1rem;
+        font-weight: 100;
+        text-align: right;
+        color: gray;
+      }
+
+      .starts-now {
+        padding-left: 45%;
+      }
+
+      .ends-sales {
+        padding-left: 30%;
+      }
+
+      .middle-center {
+        display: flex;
+        text-align: center;
+        vertical-align: middle;
+        align-items: center;
+      }
+    }
+  }
+
+  .discount-amount-padding {
+    padding: 5px 10px 0 15px;
+
+    .check-amount {
+      padding-left: 10px;
+
+      .percent-top {
+        margin-top: 40px;
+      }
+    }
+
+    .text-box-start {
+      margin-top: 4px;
+      border: 2px solid gray;
+      width: 170px;
+      height: 80px;
+      cursor: alias;
+
+      @include responsive(lapTablet) {
+        width: 100px;
+      }
+
+      @include responsive(phoneTablet) {
+        width: 150px;
+      }
+    }
+
+    .text-box-start:hover {
+      border: 2px solid #4743ed;
+    }
+
+    .start-finish-time {
+      display: flex;
+      padding-left: 20px;
+      text-align: center;
+      vertical-align: middle;
+      align-items: center;
+      color: gray;
+    }
+  }
+
+  .discount-top-padding {
+    padding-top: 35px;
+  }
+}
+
+/**
+* CheckBox
+*/
+.container-event {
+  display: block;
+  position: relative;
+  padding-top: 3px;
+  padding-left: 35px;
+  font-size: 0.9rem;
+  color: #000000;
+  cursor: pointer;
+}
+
+.container-event input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.checkMark {
+  position: absolute;
+  border: 1px solid #4743ed;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #ffffff;
+}
+
+.checkMark-gray {
+  background-color: #e7e7f3;
+}
+
+.container-event:hover input ~ .checkMark {
+  background-color: #4743ed;
+}
+
+.container-event input:checked ~ .checkMark {
+  background-color: #4743ed;
+}
+
+.checkMark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container-event input:checked ~ .checkMark:after {
+  display: block;
+}
+
+.container-event .checkMark:after {
+  left: 7px;
+  top: 5px;
+  width: 5px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/**
+* Button
+*/
+.btn-padding {
+  margin: 0 auto;
+  padding-top: 230px;
+
+  @include responsive(lapDeskTop) {
+    padding-top: 100px;
+  }
+
+  .btn-save {
+    margin-left: 5px;
+    margin-bottom: 15px;
+
+    padding: 20px 12px;
+    border: 2px solid #4743ed;
+    width: 22%;
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 1.2rem;
+    font-family: 'Poppins Bold';
+    font-weight: bold;
+
+    display: inline-block;
+    float: right;
+    color: #ffffff;
+    background-color: #4743ed;
+    cursor: pointer;
+
+    @include responsive(lapDeskTop) {
+      width: 40%;
+    }
+
+    @include responsive(lapTablet) {
+      width: 45%;
+    }
+
+    @include responsive(phone) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 100%;
+    }
+  }
+
+  .btn-save:hover {
+    color: #000000;
+    background-color: #e7e7f3;
+  }
+}

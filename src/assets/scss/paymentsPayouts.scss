@@ -1,0 +1,167 @@
+/**
+ * Payments Payouts Page
+ */
+
+.paymentsPayouts-contents {
+  padding-top: 10px;
+  padding-bottom: 80px;
+
+  .paymentsPayouts-title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 0;
+
+    font-size: 1.1rem;
+    font-family: 'Poppins Bold';
+    font-weight: bold;
+    color: $color-employees;
+
+    @include responsive(lapTablet) {
+      padding-left: 0;
+    }
+  }
+
+  .paymentsPayouts-method-title {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 24px;
+
+    font-size: 1.1rem;
+    font-family: 'Poppins Bold';
+    font-weight: bold;
+    color: $color-employees;
+
+    @include responsive(lapTablet) {
+      padding-left: 0;
+    }
+
+    .paymentsPayouts-date-settings {
+      padding-right: 9%;
+      text-align: right;
+
+      @include responsive(lapDeskTop) {
+        text-align: left;
+      }
+
+      @include responsive(lapTablet) {
+        padding-right: 0;
+        text-align: center;
+      }
+    }
+  }
+
+  .icon-edit-manage {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+
+    @include responsive(lapDeskTop) {
+      float: left;
+    }
+  }
+
+  .payoneer-manage {
+    width: 100%;
+
+    cursor: pointer;
+  }
+
+  .inner-edit-manage {
+    margin-bottom: 10px;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+
+    @include responsive(lapDeskTop) {
+      float: left;
+    }
+  }
+
+  .paymentsPayouts-card {
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: #000000;
+    background-color: #ffffff;
+
+    .paymentsPayouts-title-padding {
+      padding: 30px 10px 30px 40px;
+
+      @include responsive(lapDeskTop) {
+        padding: 17px 10px;
+      }
+
+      @include responsive(lapTablet) {
+        padding: 17px 10px;
+      }
+    }
+  }
+
+  .settings-padding-right {
+    padding-right: 25px;
+
+    @include responsive(lapDeskTop) {
+      padding-right: 0;
+      padding-bottom: 30px;
+    }
+  }
+
+  .settings-padding-left {
+    padding-left: 25px;
+
+    @include responsive(lapDeskTop) {
+      padding-left: 0;
+      padding-bottom: 30px;
+    }
+  }
+
+  .settings-padding {
+    padding: 17px 10px 10px 10px;
+
+    @include responsive(lapTablet) {
+      padding: 17px 10px;
+    }
+
+    .settings-option, .settings-option-left {
+      padding-left: 15px;
+      border: none;
+      border-bottom: 1px solid gray;
+      width: 100%;
+      height: 40px;
+      font-weight: 100;
+      color: gray;
+
+      @include responsive(lapDeskTop) {
+        margin-top: 20px;
+      }
+    }
+
+    .settings-option {
+      text-align: right;
+    }
+  }
+
+  .payout-method-padding {
+    padding: 17px 40px;
+
+    @include responsive(lapTablet) {
+      padding: 17px 10px;
+    }
+
+    .w3-bar .w3-bar-item {
+      padding-left: 0;
+      text-align: center;
+
+      @include responsive(lapDeskTop) {
+        padding-right: 4px;
+      }
+    }
+
+    @include responsive(phone) {
+      min-width: 360px;
+    }
+  }
+}
+
+

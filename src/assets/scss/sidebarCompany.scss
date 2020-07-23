@@ -1,0 +1,112 @@
+/**
+ * Sidebar Page of the Company
+ */
+
+.w3-sidebar {
+  position: relative !important;
+  overflow-x: hidden !important;
+}
+
+.sidebar-company {
+  padding-top: 55px;
+  padding-bottom: 30px;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  min-height: 100vh;
+  font-size: 0.9rem;
+  color: #ffffff;
+  background-color: #05052b;
+  background-image: none;
+
+  .edit-check {
+    margin-bottom: 25px;
+  }
+
+  @include responsive(phoneTablet) {
+    max-width: 100%;
+  }
+
+  @include responsive(phone) {
+    min-width: 300px;
+    font-size: 0.9rem;
+  }
+
+  .check-in-ticket-edit {
+    padding: 11px 0 11px 77px;
+    font-weight: bold;
+
+    @include responsive(phoneTablet) {
+      padding-left: 160px;
+    }
+
+    @include responsive(phone) {
+      padding-left: 78px;
+    }
+  }
+
+  div:hover,
+  a:hover
+  {
+    cursor: pointer;
+    color: #4743ed !important;
+  }
+
+  div:hover {
+    background-image: url("../images/company/sidebar/left-bar.png");
+    background-repeat: repeat-y;
+  }
+
+  .icon-padding {
+    padding-right: 20px;
+    width: 100%;
+    max-width: 38px;
+  }
+
+  .item-padding {
+    padding: 10px 20px 10px 40px;
+
+    @include responsive(phoneTablet) {
+      padding-left: 120px;
+    }
+
+    @include responsive(phone) {
+      padding-left: 40px;
+    }
+  }
+  .show {
+    display: block!important;
+  }
+
+  .setting-text {
+    margin-bottom: 5px;
+    color: #4743ed;
+  }
+
+  .caret-padding {
+    padding-top: 6px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .menu-title {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 90px;
+    font-size: 0.7rem;
+
+    @include responsive(phoneTablet) {
+      padding-left: 172px;
+    }
+
+    @include responsive(phone) {
+      padding-left: 95px;
+    }
+  }
+
+  .password-padding {
+    margin-bottom: 100px;
+  }
+}

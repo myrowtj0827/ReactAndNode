@@ -1,0 +1,126 @@
+#root {
+  @import 'mixins';
+  @import 'variables';
+
+  @import 'header';
+  @import 'home';
+  @import 'footer';
+  @import 'login';
+  @import 'fonts';
+  @import 'article';
+  @import 'search';
+  @import 'settings';
+  @import "about";
+  @import "pricing";
+  @import "investors";
+
+  //  Myroslav 05/06/2020
+  @import "mixinsCompany";
+  @import "variablesCompany";
+
+  @import "headerCompany";
+  @import "footerCompany";
+  @import "sidebarCompany";
+  @import "employees";
+  @import "checkInTicket";
+  @import "eventDetails";
+  @import "manageMyEvents";
+  @import "paymentsPayouts";
+  @import "orderForm";
+  @import "orderConfirmation";
+  @import "eventTypeLanguage";
+  @import "registerationTransfer";
+  @import "waitlistSettings";
+  @import "discount";
+  @import "trackingLinks";
+  @import "analytics";
+  @import "eventReports";
+  @import "orders";
+  @import "addAttendees";
+  @import "attendeeList";
+  @import "emailsToAttendees";
+  @import "guestList";
+  @import "checkIn";
+  @import "password";
+  @import "paymentDetails";
+  @import "companySettings";
+  @import "eventDashboard";
+  @import "calendar";
+  @import "step1";
+  @import "step2";
+  @import "step3";
+  @import "step4";
+
+  background: rgb(249,249,249);
+  font-family: 'Poppins Regular';
+  letter-spacing: 1px;
+}
+
+@font-face {
+  font-family: 'Poppins Regular';
+  src: local('Poppins Regular'), url(../../fonts/Poppins-Regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Poppins Bold';
+  src: local('Poppins Bold'), url(../../fonts/Poppins-Bold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Poppins Extra Bold';
+  src: local('Poppins Extra Bold'), url(../../fonts/Poppins-Black.otf) format('opentype');
+}
+
+.text-blue{
+	color: rgb(83,1,236) !important;
+}
+
+.grey-text{
+  color: grey !important;
+  font-size: 12px !important;
+}
+
+.text-bold{
+  font-family: 'Poppins Bold';
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.height-auto {
+  height: auto !important;
+}
+
+.bg-auto {
+  background: inherit !important;
+}
+
+.text-hover-underline {
+  margin-left: 5px;
+  padding-top: 20px;
+  font-size: 0.9rem;
+  font-family: 'Poppins Bold';
+
+}
+
+.text-hover-underline:hover {
+  text-decoration: underline;
+}
+
+// pagination
+.page-item.active .page-link {
+  background-color:rgb(83,1,236) !important;
+}

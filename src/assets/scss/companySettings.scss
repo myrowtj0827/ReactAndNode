@@ -1,0 +1,197 @@
+/**
+ * Company Settings Page
+ */
+
+$color-employees: #4743ed;
+.companySettings-contents {
+  padding-bottom: 80px;
+  font-size: 0.9rem;
+
+  .companySettings-title {
+    padding: 25px 20px 10px 45px;
+    font-size: 1.1rem;
+    font-family: 'Poppins Bold';
+    font-weight: bold;
+    color: $color-employees;
+
+    @include responsive(lapTablet) {
+      padding-left: 0;
+      text-align: center;
+
+      .w3-bar .w3-bar-item {
+        float: none;
+      }
+    }
+
+    .w3-bar .w3-bar-item {
+      padding: 0 3px;
+    }
+  }
+
+  .title-black {
+    font-size: 0.9rem;
+    color: #000000;
+  }
+
+  .add-address {
+    padding-top: 15px;
+  }
+
+  .inner-edit {
+    margin-bottom: 10px;
+    width: 21px;
+    height: 23px;
+    cursor: pointer;
+  }
+
+  .lorem-icon {
+    width: 21px;
+    height: 23px;
+    cursor: pointer;
+  }
+
+  .companySettings-card {
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  .companySettings-padding {
+    padding: 13%;
+
+    @include responsive(lapTablet) {
+      padding: 5%;
+    }
+
+    @include responsive(phoneTablet) {
+      padding: 3%;
+    }
+  }
+
+  .card-edit {
+    padding: 20px 40px;
+
+    @include responsive(lapTablet) {
+      padding: 20px 10px;
+    }
+
+    .lorem-top {
+      padding-top: 38px;
+    }
+  }
+
+  .lorem-font {
+    padding-right: 7px;
+    font-family: 'Poppins Bold';
+  }
+
+  .social-card-edit {
+    padding: 15px 40px;
+
+    @include responsive(lapTablet) {
+      padding: 15px 10px;
+    }
+
+    .link-justify {
+      div {
+        padding-right: 20px;
+        padding-left: 20px;
+        //display: flex;
+        justify-content: space-between;
+
+        @include responsive(lapDeskTop) {
+          padding-right: 12px;
+          padding-left: 12px;
+        }
+
+        @include responsive(lapTablet) {
+          padding-right: 6px;
+          padding-left: 6px;
+        }
+
+        @include responsive(phoneTablet) {
+          padding-right: 8px;
+          padding-left: 8px;
+        }
+      }
+
+      .image-size {
+        width: 48px;
+        cursor: pointer;
+      }
+
+      .plus-image-event {
+        margin-right: 9px;
+        width: 23px;
+        height: 23px;
+        cursor: pointer;
+
+        @include responsive(lapDeskTop) {
+          margin-right: 2px;
+        }
+
+        @include responsive(lapTablet) {
+          margin-right: -5px;
+        }
+
+        @include responsive(phoneTablet) {
+          margin-right: -2px;
+        }
+      }
+    }
+
+    .social-top-padding {
+      padding-top: 30px;
+
+      .w3-bar .w3-bar-item {
+        padding: 4px;
+      }
+
+      @include responsive(lapTablet) {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .add-lorem-padding {
+    padding-top: 5px;
+  }
+
+  .add-why {
+    padding-top: 15px;
+  }
+
+  .img-card {
+    padding-top: 5px;
+    padding-bottom: 25px;
+    width: 17%;
+    min-width: 120px;
+
+    @include responsive(lapTablet) {
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .add-image-size {
+    width: 100%;
+    min-width: 100px;
+
+    @include responsive(lapTablet) {
+      width: 70%;
+    }
+
+    @include responsive(phoneTablet) {
+      width: 40%;
+    }
+  }
+
+  .img-justify {
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+  }
+}

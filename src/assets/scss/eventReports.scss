@@ -1,0 +1,313 @@
+/**
+ * Event Reports Page
+ */
+$color-employees: #4743ed;
+.eventReports-description {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 45px;
+  font-size: 0.9rem;
+
+  @include responsive(lapTablet) {
+    padding-left: 0;
+  }
+}
+
+.eventReports-contents {
+  padding-top: 10px;
+  padding-bottom: 100px;
+
+  .eventReports-card {
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  .card-padding {
+    padding-bottom: 30px;
+
+    .tiny-font {
+      font-size: 0.7rem;
+    }
+  }
+
+  .eventReports-padding {
+    padding: 20px 15px 15px 15px;
+
+    .eventReports-option {
+      padding-left: 20px;
+      border: none;
+      border-bottom: 2px solid gray;
+      width: 100%;
+      height: 40px;
+      font-weight: 100;
+    }
+
+    .report-top {
+      padding-top: 15px;
+    }
+  }
+
+  .date-range {
+    padding-right: 10px;
+
+    @include responsive(lapDeskTop) {
+      padding-right: 0;
+    }
+  }
+
+  .attendee-status {
+    padding-left: 10px;
+
+    @include responsive(lapDeskTop) {
+      padding-left: 0;
+    }
+  }
+
+  .none-border-padding {
+    padding: 20px 15px 15px 15px;
+
+    .eventReports-option {
+      padding-left: 20px;
+      border: none;
+      width: 100%;
+      height: 40px;
+      font-weight: 100;
+    }
+
+    .order-info, .attendee-info {
+      font-family: 'Poppins Bold';
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .table-top {
+      padding-top: 15px;
+      padding-left: 20px;
+    }
+
+    hr {
+      border-top: 2px solid #eee;
+      margin: 15px 0;
+    }
+
+    .w3-table td, th {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  .report-title {
+    padding-bottom: 10px;
+    padding-left: 40px;
+
+    font-size: 1.2rem;
+    font-family: 'Poppins Bold';
+    font-weight: bold;
+    color: $color-employees;
+
+    @include responsive(lapTablet) {
+      padding-left: 0;
+    }
+  }
+
+  .gray-color {
+    color: gray;
+  }
+
+  .configure-columns {
+    padding-bottom: 0;
+    padding-left: 40px;
+
+    font-size: 1rem;
+    font-family: 'Poppins Bold';
+    font-weight: bold;
+
+    @include responsive(lapTablet) {
+      padding-left: 0;
+    }
+  }
+
+  .output {
+    padding-bottom: 10px;
+    padding-left: 40px;
+    font-size: 0.8rem;
+
+    @include responsive(lapTablet) {
+      padding-left: 0;
+    }
+  }
+
+  .configure-width {
+    width: 47%;
+
+    input {
+      padding-left: 40px;
+      font-size: 1rem;
+      border-bottom: 2px solid gray;
+      color: grey;
+
+      background-image: url('../images/company/search-icon.png');
+      background-repeat: no-repeat;
+      background-size: 27px;
+      background-position: left center;
+    }
+
+    @include responsive(lapDeskTop) {
+      width: 70%;
+    }
+
+    @include responsive(lapTablet) {
+      width: 100%;
+    }
+  }
+
+  .show {
+    display: block!important;
+  }
+
+  .caret-padding {
+    padding-left: 6px;
+  }
+
+  .preview-padding {
+    padding-right: 30px;
+    padding-bottom: 30px;
+    font-size: 0.7rem;
+    color: $color-employees;
+
+    text-align: right;
+    cursor: pointer;
+
+    .icon-padding {
+      margin-right: 7px;
+      width: 12px;
+    }
+  }
+
+  .export {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 0.8rem;
+    font-family: 'Poppins Bold';
+    font-weight: bold;
+  }
+
+  .export-learn-more {
+    padding-top: 60px;
+    font-size: 0.85rem;
+    font-family: 'Poppins Bold';
+    font-weight: bold;
+    color: $color-employees;
+    cursor: pointer;
+
+    @include responsive(phoneTablet) {
+      padding-top: 5px;
+    }
+  }
+
+  .progress {
+    height: 10px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #f0f0f0;
+    overflow: visible;
+  }
+
+  .progress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 0.8rem;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+  }
+
+  .order-check-width {
+    width: 25%;
+
+    @include responsive(lapDeskTop) {
+      width: 50%;
+    }
+
+    @include responsive(lapTablet) {
+      width: 100%;
+    }
+
+    @include responsive(phoneTablet) {
+      width: 50%;
+    }
+
+    @include responsive(phone) {
+      width: 100%;
+    }
+  }
+
+  /**
+    * CheckBox
+    */
+  .container-event {
+    display: block;
+    position: relative;
+    padding-top: 3px;
+    padding-left: 35px;
+    font-size: 0.9rem;
+    color: #000000;
+    cursor: pointer;
+  }
+
+  .container-event input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkMark {
+    position: absolute;
+    border: 1px solid #4743ed;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff;
+  }
+
+  .checkMark-gray {
+    background-color: #e7e7f3;
+  }
+
+  .container-event:hover input ~ .checkMark {
+    background-color: #4743ed;
+  }
+
+  .container-event input:checked ~ .checkMark {
+    background-color: #4743ed;
+  }
+
+  .checkMark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .container-event input:checked ~ .checkMark:after {
+    display: block;
+  }
+
+  .container-event .checkMark:after {
+    left: 7px;
+    top: 5px;
+    width: 5px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}

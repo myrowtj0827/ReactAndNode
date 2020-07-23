@@ -1,0 +1,275 @@
+/**
+ * Step 4 Page
+ */
+
+$padding-employees: 20px;
+$color-employees: #4743ed;
+
+.create-ticket-title {
+  font-size: 2.4rem;
+  font-family: 'Poppins Bold';
+  font-weight: bold;
+  color: $color-employees !important;
+
+  @include responsive(lapTablet) {
+    text-align: center;
+  }
+
+  @include responsive(phone) {
+    font-size: 2rem;
+  }
+}
+
+.create-ticket-step4-contents {
+  padding-top: 20px;
+  padding-bottom: 60px;
+
+  @include responsive(desktop) {
+    padding-bottom: 40px;
+  }
+
+  @include responsive(largeLapTop) {
+    padding-bottom: 20px;
+  }
+
+  .eventDetails-card {
+    font-size: 1rem;
+    background-color: #ffffff;
+  }
+
+  /**
+   * Refund policy
+   */
+  .refund-title {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+
+    font-size: 1.2rem;
+    font-family: 'Poppins Bold';
+    font-weight: bold;
+    color: $color-employees;
+
+    @include responsive(lapTablet) {
+      padding-left: 0;
+    }
+  }
+
+  .eventDetails-card {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    background-color: #ffffff;
+
+    .eventDetail-title-padding {
+      padding: 17px 40px;
+
+      input {
+        padding-left: 24px;
+        font-size: 1rem;
+        border-bottom: 2px solid gray;
+        color: grey;
+      }
+
+      @include responsive(lapTablet) {
+        padding: 17px 10px;
+      }
+
+      /**
+       * CheckBox
+       */
+      .container-event {
+        display: block;
+        position: relative;
+        padding-top: 3px;
+        padding-left: 35px;
+        font-size: 0.9rem;
+        color: #000000;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      .container-event input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+
+      .checkMark {
+        position: absolute;
+        border: 1px solid #4743ed;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: #ffffff;
+      }
+
+      .container-event:hover input ~ .checkMark {
+        background-color: #4743ed;
+      }
+
+      .container-event input:checked ~ .checkMark {
+        background-color: #4743ed;
+      }
+
+      .checkMark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+
+      .container-event input:checked ~ .checkMark:after {
+        display: block;
+      }
+
+      .container-event .checkMark:after {
+        left: 7px;
+        top: 5px;
+        width: 5px;
+        height: 7px;
+        border: solid white;
+        border-width: 0 1px 1px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+
+      .sales-channel {
+        padding-left: 15px;
+        border: none;
+        border-bottom: 2px solid gray;
+        width: 100%;
+        height: 40px;
+        text-align: right;
+        color: gray;
+        cursor: pointer;
+
+        @include responsive(lapDeskTop) {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  .refund-small-font {
+    padding-top: 20px;
+    padding-left: 40px;
+    font-size: 0.7rem;
+    color: #000000;
+
+    .refund-color {
+      color: #4743ed;
+      cursor: pointer;
+    }
+  }
+
+  .additional-settings{
+    padding-top: 30px;
+    padding-left: 40px;
+
+    font-size: 2.2rem;
+    font-family: 'Poppins Bold';
+    font-weight: bold;
+    color: $color-employees;
+
+    @include responsive(lapTablet) {
+      padding-left: 0;
+    }
+
+    .eventDetails-date-settings {
+      padding-right: 9%;
+      text-align: right;
+
+      @include responsive(lapDeskTop) {
+        text-align: left;
+      }
+
+      @include responsive(lapTablet) {
+        padding-right: 0;
+        text-align: center;
+      }
+    }
+  }
+
+  /**
+ * step
+ */
+
+  .icon-top {
+    margin: 0 auto;
+    padding-top: 150px;
+    width: 100%;
+    max-width: 31%;
+
+    background-image: url('../../assets/images/company/edit/step04.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #e7e7f3;
+    background-size: contain;
+
+    @include responsive(desktop) {
+      max-width: 37%;
+    }
+
+    @include responsive(largeLapTop) {
+      max-width: 45%;
+    }
+
+    @include responsive(lapDeskTop) {
+      padding-top: 90px;
+      max-width: 60%;
+    }
+
+    @include responsive(lapTablet) {
+      padding-top: 70px;
+      max-width: 70%;
+    }
+
+    @include responsive(phoneTablet) {
+      padding-top: 110px;
+      max-width: 50%;
+    }
+
+    @include responsive(phone) {
+      padding-top: 110px;
+      max-width: 60%;
+    }
+  }
+}
+
+.empty-title-padding {
+  padding-top: 40px;
+}
+
+.empty-half-title-padding {
+  padding-top: 40px;
+  width: 35%;
+
+  @include responsive(lapDeskTop) {
+    width: 50%;
+  }
+
+  @include responsive(lapTablet) {
+    width: 100%;
+  }
+}
+
+.enter-password {
+  padding: 17px 20px;
+
+  @include responsive(lapTablet) {
+    padding: 17px 10px;
+  }
+
+  input {
+    padding-left: 20px;
+    font-size: 1rem;
+    border-bottom: 2px solid gray;
+    color: grey;
+  }
+}

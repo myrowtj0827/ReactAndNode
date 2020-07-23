@@ -1,0 +1,2910 @@
+.center-blog {
+    width: 55%;
+    position: relative;
+
+    .show-img {
+        display: block;
+
+        @include responsive(tablet) {
+            display: none;
+        }
+    }
+
+    @include responsive(desktop-m) {
+        width: 70%;
+    }
+
+    @include responsive(desktop-s) {
+        width: 83%;
+    }
+
+    @include responsive(lapDeskTop) {
+        width: 100%;
+    }
+
+    @include responsive(tablet) {
+        .p-5 {
+            padding: 0 !important;
+        }
+    }
+
+    @include responsive(phoneTablet) {
+        .p-5 {
+            padding: 0 !important;
+        }
+
+        .col-lg-4, .col-md-6, .col-sm-6 {
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+        }
+    }
+
+    @include responsive(phone) {
+        .p-5 {
+            padding: 0.1rem !important;
+        }
+
+        .col-lg-4, .col-md-6, .col-sm-6 {
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+        }
+    }
+
+    .modal-top {
+        padding-top: 235px;
+
+        @include responsive(lapDeskTop) {
+            padding-top: 160px;
+        }
+
+        @include responsive(tablet) {
+            padding-top: 0;
+        }
+    }
+
+    .max-width{
+        padding: 10px;
+        max-width: 100%;
+
+        @include responsive(lapDeskTop) {
+            margin: 10px 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        @include responsive(phoneTablet) {
+            margin: 10px 0;
+            max-width: 100%;
+        }
+
+        @include responsive(phone) {
+            margin: 10px 0;
+        }
+    }
+
+    .margin-left-img {
+        margin-left: -15px;
+
+        @include responsive(lapDeskTop) {
+            margin-left: 0;
+        }
+    }
+
+    .img-description-large {
+        padding-left: 15px;
+        padding-bottom: 15px;
+        width: 80%;
+        font-size: 1.3rem;
+    }
+
+    .img-description {
+        padding-left: 15px;
+        font-size: 0.9rem;
+
+        .grey-txt {
+            color: gray;
+        }
+    }
+
+    .lorem-title-color {
+        color: #000000;
+        font-family: 'Poppins Bold';
+
+        @include responsive(lapDeskTop) {
+            text-align: center;
+        }
+
+        @include responsive(tablet) {
+            font-size: 1.5rem;
+        }
+    }
+
+    @include responsive(tablet) {
+        .p-5 {
+            display: none;
+        }
+    }
+
+    @include responsive(lapDeskTop) {
+        .mx-5, .m-5 {
+            margin-left: 0 !important;
+            text-align: center;
+        }
+
+        .pl-5 {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+    }
+
+    .hidden-img {
+        display: none;
+        position: relative;
+        padding-top: 350px;
+
+        @include responsive(phoneTablet) {
+            padding-top: 300px;
+        }
+
+        @include responsive(phone) {
+            padding-top: 270px;
+        }
+
+        @include responsive(tablet) {
+            display: block;
+        }
+
+        .blog-article-img {
+            margin: 0 auto 20px auto;
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .card-top {
+            position: relative;
+            margin-top: 50px;
+            bottom: 30px;
+
+            .white-overlay-div {
+                position: relative;
+                margin: 0 auto;
+                box-shadow: 0 10px 20px 0 rgba(71, 67, 237, 0.2);
+                background-color: white;
+                width: 100%;
+                max-width: 100%;
+                padding: 20px;
+
+                .lorem-top {
+                    padding-top: 30px;
+                }
+
+                .mt-5 {
+                    margin-top: 20px !important;
+                    padding-bottom: 20px;
+
+                    @include responsive(desktop-m) {
+                        padding-bottom: 10px;
+                    }
+                }
+
+                @include responsive(tablet) {
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+
+/**
+ * new blog
+ */
+.center-container-newBlog {
+    // margin: auto 20vw;
+    width: 67%;
+    position: relative;
+
+    @include responsive(desktop-m) {
+        width: 70%;
+    }
+
+    @include responsive(desktop-s) {
+        width: 83%;
+    }
+
+    @include responsive(lapDeskTop) {
+        .lorem-align {
+            text-align: center;
+        }
+
+        .col-md-3 {
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        .mx-5, .m-5 {
+            margin-left: 0 !important;
+            text-align: center;
+        }
+
+        .pl-5 {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+    }
+
+    @include responsive(tablet) {
+        width: 94%;
+        .mx-5 {
+            margin-left: 0 !important;
+        }
+
+        .pl-5 {
+            padding-left: 30px !important;
+            padding-right: 30px !important;
+        }
+    }
+
+    .padding-left {
+        padding-right: 30px;
+        padding-left: 50px;
+
+        @include responsive(desktop-m) {
+            padding-right: 5px;
+            padding-left: 30px;
+        }
+
+        @include responsive(desktop-s) {
+            padding-right: 5px;
+            padding-left: 20px;
+        }
+        @include responsive(tablet) {
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        .gray-font {
+            padding-left: 15px;
+            font-size: 0.9rem;
+
+            @include responsive(tablet) {
+                padding-left: 0;
+            }
+        }
+
+        .black-font {
+            color: #000000;
+        }
+    }
+
+    .max-width{
+        padding: 35px 10px 10px;
+        max-width: 100%;
+
+        @include responsive(lapDeskTop) {
+            margin: 10px 0;
+            padding: 20px 10px 10px;
+            width: 100%;
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+.center-container-blog {
+    // margin: auto 20vw;
+    width: 55%;
+    position: relative;
+
+    .lorem-title-color {
+        color: #000000;
+        font-family: 'Poppins Bold';
+
+        @include responsive(lapDeskTop) {
+            text-align: center;
+        }
+
+        @include responsive(tablet) {
+            font-size: 1.5rem;
+        }
+    }
+
+    .work-font-bold {
+        padding-top: 30px;
+        font-size: 1.3rem;
+        font-family: 'Poppins Bold';
+    }
+
+    .job-found-txt {
+        padding-top: 10px;
+        font-size: 0.8rem;
+        font-family: 'Poppins Bold';
+    }
+
+    .add-padding {
+        padding-top: 25px;
+    }
+
+    .small-font-responsive {
+        @include responsive(tablet) {
+            font-size: 1.4rem;
+        }
+    }
+
+    .investor-icon {
+        margin-bottom: 30px;
+        height: 100%;
+        max-height: 75px;
+
+        @include responsive(tablet) {
+            max-height: 120px;
+        }
+    }
+
+    .investors-top {
+        padding-top: 45px;
+        padding-bottom: 15px;
+
+        @include responsive(tablet) {
+            font-size: 2rem;
+        }
+    }
+
+    @include responsive(desktop-m) {
+        width: 70%;
+    }
+
+    @include responsive(desktop-s) {
+        width: 83%;
+    }
+
+    @include responsive(tablet) {
+        width: 94%;
+    }
+
+    .max-width{
+        padding: 10px;
+        max-width: 100%;
+
+        @include responsive(lapDeskTop) {
+            margin: 10px 0;
+            width: 100%;
+            max-width: 100%;
+            text-align: center;
+        }
+
+        @include responsive(phoneTablet) {
+            margin: 10px 15%;
+            max-width: 70%;
+        }
+
+        @include responsive(phone) {
+            margin: 10px 10%;
+            max-width: 80%;
+        }
+    }
+
+    .title-align {
+        @include responsive(lapDeskTop) {
+            -ms-flex-align: center !important;
+            align-items: center !important;
+            text-align: center;
+
+            .title-align {
+                padding-left: 0;
+            }
+        }
+
+        @include responsive(tablet) {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        @include responsive(phone) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+    @include responsive(lapDeskTop) {
+        .mx-5, .m-5 {
+            margin-left: 0 !important;
+            text-align: center;
+        }
+
+        .pl-5 {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+    }
+
+    @include responsive(tablet) {
+        .mx-5 {
+            margin-left: 0 !important;
+        }
+
+        .pl-5 {
+            padding-left: 30px !important;
+            padding-right: 30px !important;
+        }
+    }
+
+    .investor-large-font {
+        font-size: 1.5rem;
+        font-family: 'Poppins Bold';
+    }
+
+    .investor-small-font {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 0.8rem;
+        font-family: 'Poppins Bold';
+
+        @include responsive(tablet) {
+            font-size: 1.2rem;
+        }
+    }
+
+    @include responsive(lapDeskTop) {
+        .lorem-align {
+            text-align: center;
+        }
+
+        .col-md-3 {
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+
+    .help-container {
+        margin: 0 auto;
+
+        width: 50vw;
+        min-width: 250px;
+        letter-spacing: 0;
+        text-align: center;
+
+        @include responsive(desktop-m) {
+            width: 60vw;
+        }
+
+        @include responsive(desktop-s) {
+            width: 70vw;
+        }
+
+        @include responsive(phoneTablet) {
+            width: 80vw;
+        }
+
+        .investor-tiny-font {
+            font-size: 0.9rem;
+
+            @include responsive(tablet) {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+.number-top {
+    margin-top: 35px;
+
+    .number-font {
+        padding-bottom: 30px;
+        font-size: 3.7rem;
+        font-family: 'Poppins Bold';
+
+        @include responsive(lapDeskTop) {
+            font-size: 2.5rem;
+        }
+
+        @include responsive(tablet) {
+            font-size: 3rem;
+        }
+    }
+}
+
+.center-container-security {
+    width: 80%;
+    position: relative;
+
+    .table-title-bold{
+        font-family: 'Poppins Bold';
+    }
+
+    .small-font-gray {
+        font-size: 0.9rem;
+    }
+
+    @include responsive (desktop-s) {
+        width: 90%;
+    }
+
+    @include responsive (tablet) {
+        width: 100%;
+    }
+
+    @include responsive (tablet) {
+        width: 100%;
+
+        .p-4 {
+            padding-right: 10px !important;
+            padding-left: 10px !important;
+        }
+    }
+
+    @include responsive(phoneTablet) {
+        text-align: center;
+
+        .table-title-bold {
+            padding: 0 10px;
+            font-size: 2.2rem;
+        }
+
+        .phone-top {
+            padding-top: 30px;
+        }
+
+        .small-font-gray {
+            padding: 0 20px;
+            font-size: 1.8rem;
+        }
+
+        .mr-4, .mx-4 {
+            margin-right: 0 !important;
+        }
+    }
+
+    .mb-5, .my-5 {
+        margin-bottom: 1.5rem !important;
+    }
+}
+
+.center-container-career {
+    width: 62%;
+    position: relative;
+
+    @include responsive(desktop-m) {
+        width: 75%;
+    }
+
+    @include responsive(desktop-s) {
+        width: 89%;
+    }
+
+    @include responsive(lapDeskTop) {
+        width: 100%;
+    }
+
+    .lorem-title {
+        padding-top: 60px;
+        font-size: 2rem;
+        font-family: 'Poppins Bold';
+    }
+
+    .icon-location-size {
+        font-size: 1.3rem;
+        color: gray;
+    }
+
+    .lorem-small-bold {
+        font-size: 0.8rem;
+        font-family: 'Poppins Bold';
+    }
+
+    .lorem-small {
+        font-size: 0.9rem;
+    }
+
+    .send-top-padding {
+        margin-top: 40px;
+    }
+
+    .name-top-padding {
+        padding-top: 15px;
+    }
+
+    .send-txt-bold {
+        font-size: 1.3rem;
+        font-family: 'Poppins Bold';
+    }
+
+    input {
+        padding-left: 24px;
+        font-size: 1rem;
+        border-bottom: 2px solid gray;
+        color: grey;
+        background-color: #f9f9f9;
+    }
+
+    .upload-file {
+        input {
+            border-bottom: none;
+        }
+    }
+
+    .first-name {
+        padding-right: 20px;
+
+        @include responsive(lapTablet) {
+            padding-right: 15px;
+        }
+
+        @include responsive(phoneTablet) {
+            padding-right: 0;
+        }
+    }
+
+    .last-name {
+        padding-left: 20px;
+
+        @include responsive(lapTablet) {
+            padding-left: 15px;
+        }
+
+        @include responsive(phoneTablet) {
+            padding-top: 30px;
+            padding-left: 0;
+        }
+    }
+
+    .text-box {
+        padding-bottom: 10px;
+
+        textarea {
+            width: 100%;
+            max-width: 100%;
+            height: 150px;
+            background-color: #f9f9f9;
+        }
+    }
+
+    .resume-description {
+        padding-top: 45px;
+        padding-bottom: 5px;
+        padding-left: 24px;
+        color: gray;
+    }
+
+    /**
+     * create send a resume button
+     */
+    .btn-support {
+        padding-top: 40px;
+        padding-bottom: 80px;
+        width: 50%;
+        float: right;
+
+        @include responsive(lapDeskTop) {
+            width: 70%;
+        }
+
+        @include responsive(phoneTablet) {
+            width: 100%;
+            max-width: 100%;
+            padding-right: 0;
+        }
+    }
+
+    .btn-save {
+        padding: 23px;
+        border: 2px solid #4743ed;
+        width: 93%;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.3rem;
+        font-family: 'Poppins Bold';
+        color: #ffffff;
+        background-color: #4743ed;
+        display: inline-block;
+        cursor: pointer;
+
+        @include responsive(lapTablet) {
+            float: none;
+        }
+
+        @include responsive(phoneTablet) {
+            font-size: 1.5rem;
+        }
+
+        @include responsive(phone) {
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+    }
+
+    .btn-save:hover {
+        color: #4743ed;
+        background-color: #e7e7f3;
+    }
+
+    .card-padding-top {
+        padding-top: 100px;
+
+        .add-padding-top {
+            padding-top: 60px;
+        }
+
+        .lorem-txt-bold {
+            font-size: 1.4rem;
+            font-family: 'Poppins Bold';
+        }
+
+        @include responsive(tablet) {
+            display: none;
+        }
+    }
+
+    .blue-all {
+        font-size: 1.1rem;
+        text-align: right;
+        color: #4743ed;
+        cursor: pointer;
+    }
+}
+
+//investors
+.blog-container {
+    .p-5 {
+        padding-top: 7vh !important;
+
+        @include responsive(desktop-m) {
+            padding-top: 4vh !important;
+        }
+
+        @include responsive(desktop-s) {
+            padding-top: 2vh !important;
+        }
+    }
+
+    .blog-article-img-show {
+        display: block;
+        margin: 0 auto 20px auto;
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+
+        @include responsive(tablet) {
+            display: none;
+        }
+    }
+
+    .wordsty-top {
+        padding-top: 30px;
+
+        .gray-font {
+            padding-left: 15px;
+            font-size: 1rem;
+
+            @include responsive(tablet) {
+                padding-left: 0;
+            }
+        }
+
+        .black-font {
+            color: #000000;
+        }
+    }
+
+    .lorem-large-font {
+        padding-left: 15px;
+        font-size: 2.8rem;
+        font-family: 'Poppins Bold';
+
+        @include responsive(lapDeskTop) {
+            font-size: 2.5rem;
+        }
+
+        @include responsive(tablet) {
+            padding-left: 0;
+            font-size: 2rem;
+        }
+    }
+
+    .what-font {
+        font-size: 1rem;
+        font-family: 'Poppins Bold';
+    }
+
+    .lorem-medium-font {
+        padding-left: 15px;
+        font-size: 1.4rem;
+        font-family: 'Poppins Bold';
+
+        @include responsive(lapDeskTop) {
+            font-size: 1.2rem;
+        }
+
+        @include responsive(tablet) {
+            padding-left: 0;
+        }
+    }
+
+    .img-pad-bottom {
+        padding-top: 40px;
+        margin-bottom: 80px;
+    }
+
+    .tablet-top {
+        @include responsive(tablet) {
+            padding-top: 210px;
+        }
+    }
+
+    .blog-article-img-hidden {
+        display: none;
+        margin: 0 auto 20px auto;
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+
+        @include responsive(tablet) {
+            display: block;
+        }
+    }
+
+    @include responsive(phone) {
+        .p-5 {
+            padding: 1rem !important;
+        }
+    }
+
+    .banner-bg {
+        height: 480px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('../images/Investors.png');
+
+        @include responsive(phoneTablet) {
+            height: 500px;
+        }
+
+        @include responsive(phone) {
+            height: 530px;
+        }
+
+        .investor-title {
+            padding-top: 120px;
+            font-size: 2.4rem;
+            font-family: 'Poppins Bold';
+        }
+
+        .investor-description {
+            font-size: 1.5rem;
+        }
+
+        .investor-description, .investor-title {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 28%;
+            color: #ffffff;
+
+            @include responsive(desktop-m) {
+                max-width: 45%;
+            }
+
+            @include responsive(desktop-s) {
+                max-width: 55%;
+            }
+
+            @include responsive(lapDeskTop) {
+                max-width: 65%;
+            }
+
+            @include responsive(tablet) {
+                max-width: 80%;
+            }
+
+            @include responsive(phone) {
+                max-width: 90%;
+            }
+        }
+    }
+
+    /**
+     * Blog
+     */
+    .blog-banner-bg {
+        padding-top: 50px;
+        height: 330px;
+        width: 100%;
+        color: #ffffff;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('../images/help-bck.png');
+
+        @include responsive(tablet) {
+            height: 270px;
+        }
+
+        .blog-title {
+            padding-top: 50px;
+            padding-bottom: 7px;
+            font-size: 1.6rem;
+            font-family: 'Poppins Bold';
+        }
+
+        .blog-description {
+            font-size: 0.9rem;
+        }
+
+        .bg-width {
+            width: 50%;
+            min-width: 320px;
+
+            @include responsive(tablet) {
+                width: 100%;
+            }
+        }
+
+        .blog-align {
+            margin: 0 auto;
+            width: 100%;
+            //max-width: 30%;
+            padding-left: 45%;
+
+            @include responsive(desktop-m) {
+                padding-left: 35%;
+            }
+
+            @include responsive(desktop-s) {
+                padding-left: 25%;
+            }
+
+            @include responsive(lapDeskTop) {
+                padding-left: 20%;
+            }
+
+            @include responsive(tablet) {
+                padding-left: 5%;
+            }
+
+
+            .lorem-txt-width {
+                max-width: 70%;
+
+                @include responsive(desktop-m) {
+                    max-width: 80%;
+                }
+
+                @include responsive(desktop-s) {
+                    max-width: 70%;
+                }
+
+                @include responsive(lapDeskTop) {
+                    max-width: 75%;
+                }
+
+                @include responsive(tablet) {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .w3-input {
+            border: none !important;
+        }
+
+        input {
+            padding-left: 20px;
+            border-bottom-left-radius: 4px;
+            border-top-left-radius: 4px;
+            width: 15vw;
+            height: 40px;
+            font-size: 0.9rem;
+            color: #000000;
+            background-color: #ffffff;
+
+            background-image: url('../images/search-btnn.png');
+            background-repeat: no-repeat;
+            background-size: 40px;
+            background-position: right center;
+
+            @include responsive(desktop-m) {
+                width: 22vw;
+            }
+
+            @include responsive(desktop-s) {
+                width: 25vw;
+            }
+
+            @include responsive(lapDeskTop) {
+                width: 27vw;
+            }
+
+            @include responsive(tablet) {
+                width: 90vw;
+            }
+
+            @include responsive(phone) {
+                min-width: 286px;
+            }
+        }
+    }
+
+    .image-padding {
+        @extend .navbar;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        position: absolute;
+
+        width: 100%;
+        max-width: 30%;
+
+        .blog-header-img {
+            width: 28vw;
+
+            @include responsive(desktop-m) {
+                width: 35vw;
+            }
+
+            @include responsive(desktop-s) {
+                width: 40vw;
+            }
+
+            @include responsive(lapDeskTop) {
+                width: 47vw;
+            }
+
+            @include responsive(tablet) {
+                width: 95vw;
+            }
+        }
+
+        @include responsive(tablet) {
+            display: none;
+        }
+    }
+
+    .image-show {
+        @extend .navbar;
+        display: none;
+        padding: 0 !important;
+        flex-direction: column;
+        width: 100vw;
+
+        .blog-header-img {
+            width: 100vw;
+            height: 450px;
+            min-width: 320px !important;
+
+            @include responsive(phoneTablet) {
+                height: 400px;
+            }
+
+            @include responsive(phone) {
+                height: 350px;
+            }
+        }
+
+        @include responsive(tablet) {
+            display: block;
+        }
+    }
+
+    .overlay-div {
+        @extend .navbar;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        position: absolute;
+        top: 6%;
+        width: 100%;
+
+        .search__block{
+            margin: 0!important;
+            width: auto;
+
+            .advanced-search-career {
+                border: none;
+                height: 2.5vw;
+                width: 14vw;
+                border-radius: 0;
+                border-left: solid grey 1px;
+            }
+        }
+    }
+
+    .blog-header-img {
+        width: 28vw;
+        @include responsive(tablet) {
+            width: 100%;
+        }
+    }
+
+    .blog-article-img {
+        width: 75%;
+        margin-top: 2%;
+        @include responsive (lapDeskTop) {
+            width: 80%;
+        }
+    }
+
+    .white-overlay-div {
+        box-shadow: 0 10px 20px 0 rgba(71, 67, 237, 0.2);
+        background-color: white;
+        position: absolute;
+        width: 24vw;
+        padding: 20px;
+        right: 7%;
+        top: 20%;
+
+        @include responsive(desktop-m) {
+            width: 30vw;
+            right: 9%;
+        }
+
+        @include responsive(desktop-s) {
+            width: 40vw;
+            right: 9%;
+        }
+
+        @include responsive(lapDeskTop) {
+            width: 45vw;
+            top: 12%;
+            right: 12%;
+        }
+
+        .lorem-top {
+            padding-top: 30px;
+        }
+
+        .mt-5 {
+            margin-top: 20px !important;
+            padding-bottom: 40px;
+
+            @include responsive(desktop-m) {
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+    .blue-div {
+        margin: 0 auto;
+        padding-top: 70px;
+        padding-bottom: 10px;
+        height: 100%;
+        max-width: 100vw;
+        min-width: 340px;
+        color: white;
+        background: rgb(77,57,224);
+
+        .txt-large-bole {
+            width: 40%;
+            font-size: 3.3rem;
+            font-family: 'Poppins Bold';
+
+            @include responsive(desktop-m) {
+                width: 55%;
+                font-size: 3rem;
+            }
+
+            @include responsive(desktop-s) {
+                width: 65%;
+                font-size: 2.7rem;
+            }
+
+            @include responsive(lapDeskTop) {
+                width: 80%;
+                font-size: 2.3rem;
+            }
+
+            @include responsive(lapDeskTop) {
+                font-size: 1.8rem;
+            }
+
+            @include responsive(phone) {
+                font-size: 1.4rem;
+            }
+
+        }
+
+        @include responsive(lapDeskTop) {
+            padding-top: 50px;
+            padding-bottom: 10px;
+        }
+    }
+
+    .news-column {
+        background-color: rgb(240,240,240);
+    }
+
+    .blue-header {
+        color: white;
+        background: rgb(77,57,224);
+
+        min-height: 80px;
+        width: 100%;
+    }
+
+    .negative-margin{
+        margin-top: -290px;
+
+        @include responsive(lapDeskTop) {
+            margin-top: -190px;
+        }
+    }
+}
+
+.bottom-overlay {
+    margin-top: -36vh;
+}
+
+.investor-stats {
+    margin-top: 100px
+}
+
+.contact-us-container {
+    background-color: rgb(240,240,240);
+
+    .tiny-font-gray {
+        font-size: 0.8rem;
+    }
+
+    @include responsive(desktop-s) {
+        .w-60 {
+            width: 70%;
+        }
+    }
+
+    @include responsive(lapDeskTop) {
+        .pr-5, .px-5 {
+            padding-right: 0 !important;
+        }
+    }
+
+    @include responsive(tablet) {
+        .w-60 {
+            width: 80%;
+        }
+
+        .blue-button-contact {
+            width: 100%;
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+
+    @include responsive(phoneTablet) {
+        .tiny-font-gray {
+            font-size: 1.7rem;
+        }
+    }
+
+    @include responsive(phone) {
+        .w-60 {
+            width: 90%;
+        }
+    }
+
+    .custom-input {
+        border-top: none!important;
+        border-left: none!important;
+        border-right: none!important;
+        border-bottom: solid lightgrey 2px;
+        border-radius: 0 !important;
+        background: inherit;
+        padding: 20px 0 15px 15px;
+    }
+
+    .custom-message-input {
+        border: solid 2px lightgrey !important;
+        border-radius: 0 !important;
+        background: inherit;
+        padding: 20px 0 15px 15px;
+    }
+}
+
+.blue-button-contact {
+    color: white;
+    background: rgb(77,57,224);
+    padding: 20px;
+}
+
+//security
+.security-image-bg {
+    height: 335px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../images/help-bck.png');
+    margin-bottom: 22px;
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+
+    .overlay-center{
+        .security-font {
+            font-size: 3.2rem;
+            font-family: 'Poppins Bold';
+        }
+    }
+
+    .security-div {
+        color: white;
+    }
+
+    @include responsive(phone) {
+        height: 235px;
+    }
+}
+.terms-image-bg {
+    height: 335px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../images/terms-bck.jpg');
+    margin-bottom: 22px;
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+
+    .overlay-center{
+        .terms-font {
+            font-size: 3.2rem;
+            font-family: 'Poppins Bold';
+            font-weight: 700;
+        }
+    }
+
+    .security-div {
+        color: white;
+    }
+
+    @include responsive(phone) {
+        height: 235px;
+    }
+}
+
+.advanced-search-location {
+    border: none;
+    height: 2.5vw;
+    width: 14vw;
+    border-radius: 0;
+    border-left: solid grey 1px;
+}
+
+.advanced-search-career {
+    border: none;
+    height: 2.5vw;
+    width: 14vw;
+    border-radius: 0;
+    border-left: solid grey 1px;
+}
+
+.career-container {
+    .add-margin {
+        padding-top: 30px;
+    }
+
+    .career-bg {
+        height: 335px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('../images/help-bck.png');
+
+        display: flex;
+        text-align: center;
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+
+        .career-center{
+            .career-font {
+                margin-bottom: 20px;
+                font-size: 2rem;
+                font-family: 'Poppins Bold';
+            }
+        }
+
+        .search-align {
+            @include responsive(tablet) {
+                margin: 0 auto;
+                width: 100%;
+                max-width: 70%;
+            }
+
+            @include responsive(phone) {
+                max-width: 90%;
+            }
+
+            input {
+                padding-left: 50px;
+                border-right: solid 1px #4743ed;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+                width: 20vw;
+                height: 50px;
+                font-size: 1rem;
+                color: #000000;
+                background-color: #ffffff;
+
+                background-attachment: fixed;
+                background-image: url('../images/search-btnn.png');
+                background-repeat: no-repeat;
+                background-size: 50px;
+                background-position: right center;
+
+                @include responsive(desktop-s) {
+                    width: 35vw;
+                }
+
+                @include responsive(tablet) {
+                    background-attachment: inherit;
+                    border-bottom: solid 2px #4743ed;
+                    width: 65vw;
+                }
+
+                @include responsive(phone) {
+                    width: 85vw;
+                    min-width: 286px;
+                }
+            }
+
+            .country-option {
+                padding-left: 24px;
+                border: none;
+                border-left: solid 1px gray;
+                width: 20vw;
+                height: 50px;
+                font-size: 1rem;
+                color: #000000;
+                cursor: pointer;
+
+                @include responsive(desktop-s) {
+                    width: 30vw;
+                }
+
+                @include responsive(lapDeskTop) {
+                    padding-left: 15px;
+                }
+
+                @include responsive(tablet) {
+                    width: 65vw;
+                }
+
+                @include responsive(phone) {
+                    width: 85vw;
+                    min-width: 286px;
+                }
+            }
+        }
+
+        .search-bg {
+            height: 50px;
+
+            @include responsive(tablet) {
+                display: none;
+            }
+        }
+
+        .w3-bar .w3-bar-item {
+            padding: 0;
+        }
+
+        .career-div {
+            //@extend .navbar;
+            color: white;
+
+            .search__block {
+                width: 45vw;
+                height: 100%;
+                max-height: 2.5vw;
+
+                @include responsive(desktop-m) {
+                    width: 55vw;
+                }
+
+                @include responsive(desktop-s) {
+                    width: 65vw;
+                }
+
+                @include responsive(lapDeskTop) {
+                    width: 75vw;
+                }
+
+                @include responsive(tablet) {
+                    width: 50vw;
+                    display: block !important;
+                }
+
+                .advanced-search-location {
+                    border: none;
+                    width: 20vw;
+                    border-radius: 0;
+                    border-left: solid grey 1px;
+
+                    @include responsive(desktop-m) {
+                        width: 25vw;
+                        height: 3vw;
+                    }
+
+                    @include responsive(desktop-s) {
+                        width: 30vw;
+                        height: 3.5vw;
+                    }
+
+                    @include responsive(lapDeskTop) {
+                        width: 35vw;
+                        height: 4vw;
+                    }
+
+                    @include responsive(tablet) {
+                        width: 20vw;
+                        padding-right: 0;
+                    }
+                }
+
+                .advanced-search-career {
+                    border: none;
+                    width: 25vw;
+                    border-radius: 0;
+                    border-left: solid grey 1px;
+
+                    @include responsive(desktop-m) {
+                        width: 30vw;
+                        height: 3vw;
+                    }
+
+                    @include responsive(desktop-s) {
+                        width: 35vw;
+                        height: 3.5vw;
+                    }
+
+                    @include responsive(lapDeskTop) {
+                        width: 40vw;
+                        height: 4vw;
+                    }
+
+                    @include responsive(tablet) {
+                        width: 25vw;
+                        border-bottom: solid 2px #4743ed;
+                    }
+                }
+
+                .career_search__btn {
+                    width: 100%;
+                    max-width: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #4743ed;
+                    cursor: pointer;
+
+                    @include responsive(desktop-m) {
+                        height: 3vw;
+                    }
+
+                    @include responsive(desktop-s) {
+                        height: 3.5vw;
+                    }
+
+                    @include responsive(lapDeskTop) {
+                        height: 4vw;
+                    }
+
+                    @include responsive(tablet) {
+                        max-width: 40px;
+                    }
+
+                    i {
+                        font-size: 1.5625vw;
+                    }
+                }
+            }
+        }
+
+        @include responsive(phone) {
+            height: 235px;
+        }
+    }
+
+    .arrow-align {
+        padding-top: 100px;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 240px;
+
+        .blue-font {
+            color: #4743ed;
+            cursor: pointer;
+        }
+    }
+
+    .text-box-half {
+        margin-left: 10px;
+        border: 1px solid #4743ed;
+        width: 50px;
+        height: 50px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        .icon-size {
+            width: 15px;
+        }
+    }
+
+    .text-box-half:hover {
+        background-color: #4743ed;
+    }
+}
+
+//org
+.org-container {
+    padding: 5rem 10rem 5rem 10rem;
+
+    @include responsive(desktop-s) {
+        padding: 5rem 7rem 5rem 7rem;
+    }
+
+    @include responsive(lapDeskTop) {
+        padding: 5rem 3rem 5rem 3rem;
+    }
+
+    @include responsive(tablet) {
+        padding: 2rem 3rem 2rem 2rem;
+    }
+
+    @include responsive(phoneTablet) {
+        padding: 2rem;
+
+        .w3-bar .w3-bar-item {
+            padding: 0 !important;
+        }
+    }
+
+    @include responsive(phone) {
+        padding: 2rem 1rem 2rem 1rem;
+    }
+}
+
+.follow-img {
+    padding-right: 30px;
+    padding-left: 10px;
+
+    .img-size {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    @include responsive(tablet) {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    /**
+ * Button
+ */
+    .btn-follow-padding {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+
+        .btn-follow {
+            display: inline-block;
+            margin-bottom: 15px;
+            padding: 8px 12px;
+            border: 1px solid #4743ed;
+            width: 100%;
+
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-family: 'Poppins Bold';
+
+            cursor: pointer;
+            color: #4743ed;
+        }
+
+        .btn-follow:hover {
+            color: #ffffff;
+            background-color: #4743ed;
+        }
+    }
+}
+
+.desktop-m-padding {
+    @include responsive(desktop-m) {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 80%;
+    }
+
+    @include responsive(desktop-s) {
+        max-width: 88%;
+    }
+
+    @include responsive(desktop-xs) {
+        max-width: 95%;
+    }
+
+    @include responsive(lapDeskTop) {
+        max-width: 100%;
+    }
+
+    .tablet-align {
+        @include responsive(tablet) {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+.half-width {
+    width: 50%;
+
+    @include responsive(desktop-m) {
+        width: 100%;
+
+        @include responsive(tablet) {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 100%;
+            text-align: center;
+
+            .w3-col {
+                float: none !important;
+            }
+        }
+    }
+}
+
+.follow-top-padding {
+    padding-top: 40px;
+
+    @include responsive(tablet) {
+        padding-top: 10px;
+    }
+
+    .w3-bar .w3-bar-item {
+        padding: 0 10px !important;
+    }
+
+    .add-image-size {
+        margin-right: 20px;
+        width: 100%;
+        max-width: 45px;
+    }
+
+    .line-border {
+        display: none;
+
+        @include responsive(desktop-m) {
+            display: block;
+            width: 100%;
+            height: 5px;
+            color: gray;
+        }
+    }
+
+    .desktop-width {
+        @include responsive(desktop-m) {
+            padding: 20px;
+        }
+    }
+
+    @include responsive(tablet) {
+        text-align: center;
+    }
+}
+
+.padding-lightopia {
+    padding-left: 10px;
+}
+
+.bold-lightopia {
+    padding-bottom: 40px;
+    font-size: 1.3vw;
+    font-family: 'Poppins Bold';
+
+    @include responsive(desktop-m) {
+        font-size: 2rem;
+    }
+}
+
+.bold-switch-title {
+    padding-bottom: 40px;
+    font-size: 1.5rem;
+    font-family: 'Poppins Bold';
+
+    @include responsive(desktop-s) {
+        font-size: 1.3rem;
+    }
+
+    @include responsive(lapDeskTop) {
+        font-size: 1.1rem;
+    }
+
+    @include responsive(lapDeskTop) {
+        font-size: 1.1rem;
+    }
+}
+
+.icon-top-padding {
+    padding-bottom: 10px;
+
+    .icon-image-size {
+        margin-right: 10px;
+        width: 100%;
+        max-width: 25px;
+    }
+
+    @include responsive(tablet) {
+        float: left !important;
+        text-align: left;
+        margin-left: calc(100% - 62vw) !important;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    @include responsive(phoneTablet) {
+        margin-left: calc(100% - 67vw) !important;
+    }
+
+    @include responsive(phone) {
+        margin-left: 14% !important;
+    }
+
+    @media screen and (max-width: 320px){
+        margin-left: 2% !important;
+    }
+}
+
+.line-padding {
+    display: block;
+    position: relative;
+    margin: 40px auto 5px auto;
+
+    .vertical-line {
+        display: block;
+        position: relative;
+        border-left: 1px solid gray;
+        height: calc(230px);
+
+        @include responsive(desktop-m) {
+            display: none;
+        }
+    }
+}
+
+.txt-line-height {
+    padding-top: 10px;
+}
+
+.img-width-follow {
+    width: 230px;
+
+    @include responsive(tablet) {
+        padding-bottom: 30px;
+        margin: 0 auto;
+        text-align: center !important;
+        width: 40%;
+    }
+
+    @include responsive(phoneTablet) {
+        width: 50%;
+    }
+
+    @include responsive(phone) {
+        width: 60%;
+    }
+}
+
+.img-width-txt {
+    width: calc(100% - 230px);
+
+    @include responsive(tablet) {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+        //text-align: center !important;
+
+        .w3-col {
+            float: none !important;
+        }
+
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hidden-phoneTablet {
+    display: block !important;
+
+    @include responsive(phoneTablet) {
+        display: none !important;
+    }
+}
+
+.shown-phoneTablet {
+    display: none !important;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+
+    @include responsive(phoneTablet) {
+        display: block !important;
+    }
+}
+
+.title-align-follow {
+    padding-top: 130px;
+
+    @include responsive(tablet) {
+        padding-top: 70px;
+
+        .w3-right {
+            float: none !important;
+        }
+
+        .w3-left {
+            float: none !important;
+        }
+    }
+
+    .lighttopia-tablet {
+        @include responsive(tablet) {
+            margin: 0 auto !important;
+            width: 100% !important;
+            max-width: 100% !important;
+            text-align: center;
+        }
+    }
+
+    .large-normal {
+        font-size: 1.4rem;
+
+        @include responsive(desktop-s) {
+            font-size: 1.2rem;
+        }
+
+        @include responsive(lapDeskTop) {
+            font-size: 1rem;
+        }
+
+        @include responsive(tablet) {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 100%;
+
+            text-align: center;
+        }
+
+        .switch-padding-left {
+            padding-left: 25px;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 26px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ffffff;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 22px;
+            width: 22px;
+            left: 1px;
+            bottom: 1px;
+            background-color: gray;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked + .slider {
+            background-color: #4743ed;
+        }
+
+        input:focus + .slider {
+            box-shadow: 0 0 2px #4743ed;
+        }
+
+        input:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        .slider.round {
+            border-radius: 34px;
+            border: 1px solid gray;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    }
+}
+
+
+.center-org-container {
+    width: 60%;
+
+    @include responsive(desktop-s) {
+        width: 70%;
+    }
+
+    @include responsive(tablet) {
+        width: 100%;
+    }
+
+    .active-complete {
+        margin: 0 auto;
+        padding-top: 25px;
+
+        font-size: 1.6rem;
+        font-family: 'Poppins Bold';
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .active-padding {
+        padding-top: 20px;
+    }
+
+    .card-padding-search {
+        margin-top: 40px;
+        padding: 20px;
+        background-color: #f0f0f0;
+
+        @include responsive(tablet) {
+            padding: 10px;
+        }
+    }
+
+    .card-padding-search:hover {
+        opacity: 0.7;
+        background-color: #eaf6ff;
+    }
+
+    .slide-container {
+        margin: 0 auto;
+        width: 100%;
+
+        .col-md-6 {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+
+    .each-fade {
+        display: flex;
+    }
+
+    .each-fade:hover {
+        opacity: 0.7;
+    }
+
+    .each-fade .image-container {
+        width: 70%;
+
+        @include responsive(desktop-s) {
+            width: 90%;
+        }
+
+        @include responsive(tablet) {
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .from-to-price {
+        position: absolute;
+        padding: 7px 50px;
+        bottom: 0;
+        left: 0;
+        font-size: 0.7rem;
+
+        background-color: #4743ed;
+        color: #FFFFFF;
+
+        @include responsive(lapDeskTop) {
+            position: relative;
+            padding: 4px;
+            text-align: center;
+        }
+    }
+
+    .completed-padding {
+        position: absolute;
+        padding: 7px 30px;
+        bottom: 0;
+        left: 0;
+        font-size: 0.7rem;
+
+        background-color: gray;
+        color: #FFFFFF;
+
+        @include responsive(lapDeskTop) {
+            position: relative;
+            padding: 4px;
+            text-align: center;
+        }
+    }
+
+    .search-padding {
+        padding: 10px 20px;
+
+        @include responsive(lapDeskTop) {
+            padding: 5px 15px;
+        }
+
+        @include responsive(phoneTablet) {
+            padding: 0 10px;
+        }
+
+        .responsive-font, .responsive-txt {
+            @include responsive(tablet) {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
+
+.multi-line {
+    display: block;
+    display: -webkit-box;
+    max-width: 78%;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @include responsive(lapDeskTop) {
+        max-width: 75%;
+    }
+
+    @include responsive(phone) {
+        max-width: 65%;
+    }
+}
+
+.two-line {
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.read-more {
+    right: 0;
+    top: 75%;
+}
+
+/**
+ * create new button
+ */
+.btn-support {
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 80px;
+
+    @include responsive(phoneTablet) {
+        width: 100%;
+        max-width: 100%;
+        padding-right: 0;
+    }
+}
+
+.btn-save {
+    margin: 15px;
+    padding: 23px 75px;
+    border: 2px solid #4743ed;
+    width: 93%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Poppins Bold';
+    color: #ffffff;
+    background-color: #4743ed;
+    display: inline-block;
+    cursor: pointer;
+
+    @include responsive(lapTablet) {
+        float: none;
+    }
+
+    @include responsive(phoneTablet) {
+        font-size: 2rem;
+    }
+}
+
+.btn-save:hover {
+    color: #4743ed;
+    background-color: #e7e7f3;
+}
+
+//FAQ
+.faq-image-bg {
+    height: 335px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../images/help-bck.png');
+
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+
+    .overlay-center{
+        margin: 50px auto 0 auto;
+        width: 100%;
+        max-width: 40%;
+        text-align: center;
+
+        @include responsive(lapDeskTop) {
+            max-width: 50%;
+        }
+
+        @include responsive(tablet) {
+            max-width: 65%;
+        }
+
+        @include responsive(phoneTablet) {
+            max-width: 100%;
+        }
+
+        .faq-font {
+            font-size: 2rem;
+            font-family: 'Poppins Bold';
+        }
+    }
+
+    .faq-div {
+        color: white;
+    }
+
+    .input-align {
+        margin: 50px auto 0 auto;
+        width: 100%;
+        max-width: 100%;
+        text-align: center !important;
+
+        @include responsive(phone) {
+            margin-top: 20px;
+        }
+    }
+
+    @include responsive(phone) {
+        height: 235px;
+    }
+
+    .w3-input {
+        border: none !important;
+    }
+
+    input {
+        margin: 0 auto;
+        padding-left: 20px;
+        width: 100%;
+        max-width: 100%;
+        height: 40px;
+        font-size: 0.9rem;
+        color: #000000;
+        background-color: #ffffff;
+
+        background-image: url('../images/search-btnn.png');
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: right center;
+    }
+}
+
+.center-container-faq {
+    width: 60%;
+    position: relative;
+
+    @include responsive(desktop-m) {
+        width: 75%;
+    }
+    @include responsive (desktop-s) {
+        width: 90%;
+    }
+
+    @include responsive (tablet) {
+        width: 100%;
+    }
+
+    @include responsive (tablet) {
+        width: 100%;
+    }
+
+    @include responsive(phoneTablet) {
+        text-align: center;
+    }
+
+    .choose-category {
+        margin-top: 100px;
+        margin-bottom: 30px;
+
+        font-size: 1.8rem;
+        font-family: 'Poppins Bold';
+
+        @include responsive(lapDeskTop) {
+            //margin: 0 auto;
+            width: 100%;
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+
+    .card-right-padding {
+        padding-right: 20px;
+        padding-bottom: 10px;
+        text-align: center;
+        cursor: pointer;
+
+        @include responsive(desktop-s) {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .w3-card:hover {
+            box-shadow: 0 10px 20px 0 rgba(71, 67, 237, 0.2);
+        }
+
+        .card-inner-padding {
+            padding: 10px;
+            background-color: #ffffff;
+
+            .small-txt-bold {
+                padding-top: 45px;
+                font-size: 1.1rem;
+                font-family: 'Poppins Bold';
+            }
+
+            .small-txt {
+                padding-bottom: 35px;
+            }
+        }
+    }
+
+    .card-justify-padding {
+        padding-bottom: 10px;
+        padding-right: 20px;
+        text-align: center;
+        cursor: pointer;
+
+        @include responsive(phoneTablet) {
+            padding-right: 0;
+        }
+
+        .card2-inner-padding:hover {
+            box-shadow: 0 10px 20px 0 rgba(71, 67, 237, 0.2);
+            background-color: #ffffff;
+        }
+
+        .card2-inner-padding {
+            padding: 15px;
+        }
+    }
+
+    .text-description {
+        @include responsive(tablet) {
+            padding: 15px;
+        }
+    }
+
+    .pls-padding {
+        padding-top: 70px;
+
+        @include responsive(phoneTablet) {
+            padding-top: 30px;
+        }
+    }
+
+    .txt-top {
+        padding-top: 25px;
+    }
+
+    .medium-txt-bold {
+        font-size: 1rem;
+        font-family: 'Poppins Bold';
+    }
+
+    .card3-padding-top {
+        padding-top: 60px;
+
+        @include responsive(phoneTablet) {
+            padding-top: 0;
+        }
+    }
+}
+
+.contact-email-container {
+    .w-60 {
+        padding-right: 10%;
+
+        @include responsive(desktop-m) {
+            padding-right: 0;
+        }
+
+        @include responsive(desktop-s) {
+            width: 70%;
+        }
+
+        @include responsive(lapDeskTop) {
+            width: 80%;
+        }
+
+        @include responsive(tablet) {
+            width: 90%;
+        }
+    }
+
+    .tiny-font-gray {
+        font-size: 1rem;
+    }
+
+    .email-title-bold {
+        margin-top: 70px;
+        margin-bottom: 40px;
+
+        font-size: 1.8rem;
+        font-family: 'Poppins Bold';
+
+        @include responsive(lapDeskTop) {
+            margin-top: 40px;
+            text-align: center;
+        }
+    }
+
+    ::placeholder {
+        font-size: 1.1rem !important;
+    }
+
+    @include responsive(tablet) {
+        .pr-5, .px-5 {
+            padding-right: 0 !important;
+        }
+    }
+
+    @include responsive(tablet) {
+        .blue-button-contact {
+            width: 100%;
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+
+    @include responsive(phoneTablet) {
+        .tiny-font-gray {
+            font-size: 1.7rem;
+        }
+    }
+
+    .custom-input {
+        border-top: none!important;
+        border-left: none!important;
+        border-right: none!important;
+        border-bottom: 1px solid #000000;
+        border-radius: 0 !important;
+        background: inherit;
+        padding: 20px 0 15px 20px;
+    }
+
+    .custom-message-input {
+        border: solid 1px #000000 !important;
+        border-radius: 0 !important;
+        background: inherit;
+        padding: 20px 0 15px 15px;
+    }
+
+    .padding-top-subject {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    .btn-faq {
+        margin-right: -2%;
+        padding-top: 50px;
+        width: 100%;
+        max-width: 30%;
+        float: right !important;
+
+        @include responsive(desktop-s) {
+            max-width: 35%;
+        }
+
+        @include responsive(lapDeskTop) {
+            max-width: 40%;
+        }
+
+        @include responsive(tablet) {
+            margin-right: 0;
+            max-width: 45%;
+        }
+
+        @include responsive(phoneTablet) {
+            max-width: 50%;
+        }
+
+        @include responsive(phone) {
+            max-width: 100%;
+        }
+
+        .btn-save {
+            padding: 23px;
+            border: 2px solid #4743ed;
+            width: 93%;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-family: 'Poppins Bold';
+            color: #ffffff;
+            background-color: #4743ed;
+            display: inline-block;
+            cursor: pointer;
+
+            @include responsive(lapTablet) {
+                float: none;
+            }
+
+            @include responsive(phoneTablet) {
+                padding: 15px;
+                font-size: 1.5rem;
+            }
+
+            @include responsive(phone) {
+                padding: 10px;
+                margin: 0 auto 20px;
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+
+        .btn-save:hover {
+            color: #4743ed;
+            background-color: #e7e7f3;
+        }
+    }
+}
+
+//Help
+.help-image-bg {
+    height: 335px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../images/help-bck.png');
+
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+
+    .overlay-center{
+        margin: 50px auto 0 auto;
+        width: 100%;
+        max-width: 40%;
+        text-align: center;
+
+        @include responsive(lapDeskTop) {
+            max-width: 50%;
+        }
+
+        @include responsive(tablet) {
+            max-width: 65%;
+        }
+
+        @include responsive(phoneTablet) {
+            max-width: 100%;
+        }
+
+        .help-font {
+            font-size: 2rem;
+            font-family: 'Poppins Bold';
+        }
+    }
+
+    .help-div {
+        color: white;
+    }
+
+    .input-align-help {
+        margin: 50px auto 0 auto;
+        width: 100%;
+        max-width: 100%;
+        text-align: center !important;
+
+        @include responsive(phone) {
+            margin-top: 20px;
+        }
+    }
+
+    @include responsive(phone) {
+        height: 235px;
+    }
+
+    .w3-input {
+        border: none !important;
+    }
+
+    input {
+        margin: 0 auto;
+        padding-left: 20px;
+        width: 100%;
+        max-width: 100%;
+        height: 40px;
+        font-size: 0.9rem;
+        color: #000000;
+        background-color: #ffffff;
+
+        background-image: url('../images/search-btnn.png');
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: right center;
+    }
+}
+
+.center-container-help {
+    width: 60%;
+    position: relative;
+
+    @include responsive(desktop-m) {
+        width: 75%;
+    }
+    @include responsive (desktop-s) {
+        width: 90%;
+    }
+
+    @include responsive (tablet) {
+        width: 100%;
+    }
+
+    @include responsive (tablet) {
+        width: 100%;
+    }
+
+    @include responsive(phoneTablet) {
+        text-align: center;
+    }
+
+    .choose-category {
+        margin-top: 100px;
+        margin-bottom: 30px;
+
+        font-size: 1.8rem;
+        font-family: 'Poppins Bold';
+
+        @include responsive(lapDeskTop) {
+            //margin: 0 auto;
+            width: 100%;
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+
+    .recommended-topic {
+        margin-top: 20px;
+    }
+
+    .popular-question {
+        margin-top: 40px;
+    }
+
+    .card-right-padding {
+        padding-right: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+        cursor: pointer;
+
+        @include responsive(desktop-s) {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .w3-card:hover {
+            box-shadow: 0 10px 20px 0 rgba(71, 67, 237, 0.2);
+        }
+
+        .card-inner-padding {
+            padding: 10px;
+            background-color: #ffffff;
+
+            .small-txt-bold {
+                padding-top: 45px;
+                font-size: 1.1rem;
+                font-family: 'Poppins Bold';
+            }
+
+            .small-txt {
+                padding-bottom: 35px;
+            }
+        }
+    }
+
+    .card-justify-padding {
+        padding-bottom: 10px;
+        padding-right: 20px;
+        text-align: center;
+        cursor: pointer;
+
+        @include responsive(phoneTablet) {
+            padding-right: 0;
+        }
+
+        .card2-inner-padding:hover {
+            box-shadow: 0 10px 20px 0 rgba(71, 67, 237, 0.2);
+            background-color: #ffffff;
+        }
+
+        .card2-inner-padding {
+            padding: 15px;
+        }
+    }
+
+    .text-description {
+        padding-bottom: 120px;
+        @include responsive(tablet) {
+            padding: 15px 15px 40px;
+        }
+    }
+
+    .txt-top {
+        padding-top: 25px;
+    }
+
+    .medium-txt-bold {
+        font-size: 1rem;
+        font-family: 'Poppins Bold';
+    }
+
+    .card3-padding-top {
+        padding-top: 60px;
+
+        @include responsive(phoneTablet) {
+            padding-top: 0;
+        }
+    }
+
+    .slick-prev:before, .slick-next:before {
+        font-size: 30px;
+        color: #4743ed;
+        //background-color: #4743ed;
+    }
+
+    //.slick-next:before {
+    //    margin-left: 15px;
+    //    padding: 15px;
+    //
+    //    content: '\276f' !important;
+    //}
+    //
+    //.slick-prev:before {
+    //
+    //    padding: 15px;
+    //    content: '\276e' !important;
+    //}
+
+    .slick-topics-container {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+
+        @include responsive(lapDeskTop) {
+            max-width: 90%;
+        }
+
+        @include responsive(phoneTablet) {
+            max-width: 80%;
+        }
+
+        .slick-card {
+            display: flex;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 2px;
+            border-bottom: solid red 5px;
+            width: 18vw;
+            height: 170px;
+
+            transition: all .25s linear;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            background: rgb(240,240,240);
+
+            margin: 0 auto;
+            text-align: center;
+
+            @include responsive(desktop-m) {
+                width: 23vw;
+            }
+
+            @include responsive(desktop-s) {
+                width: 26vw;
+            }
+
+            @include responsive(lapDeskTop) {
+                width: 23vw;
+            }
+
+            @include responsive(tablet) {
+                width: 25vw;
+            }
+
+            @include responsive(phoneTablet) {
+                width: 32vw;
+            }
+
+            @include responsive(phone) {
+                margin: 0 auto;
+                width: 60vw;
+                text-align: center;
+                min-width: 200px;
+            }
+        }
+
+        .slick-card > b {
+            font-size: 1.2rem;
+            font-family: 'Poppins Bold';
+        }
+
+        .slick-card > div {
+            font-size: 1rem;
+        }
+
+        .slider-padding > div {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+    }
+}

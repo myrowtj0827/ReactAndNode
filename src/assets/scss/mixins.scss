@@ -1,0 +1,53 @@
+@mixin responsive($size) {
+  @if $size==phone {
+    @media (max-width: breakpoints(phone)) {
+      @content;
+    }
+  }
+
+  @if $size==phoneTablet {
+    @media (max-width: breakpoints(phoneTablet)) {
+      @content;
+    }
+  }
+
+  @if $size==lapDeskTop {
+    @media (max-width: breakpoints(lapDeskTop)) {
+      @content;
+    }
+  }
+
+  @if $size==tablet {
+    @media (max-width: breakpoints(tablet)) {
+      @content;
+    }
+  }
+
+  @else if $size==desktop-xs {
+    @media (max-width: breakpoints(desktop-xs)) {
+      @content;
+    }
+  }
+
+  @else if $size==desktop-s {
+    @media (max-width: breakpoints(desktop-s)) {
+      @content;
+    }
+  }
+
+  @else if $size==desktop-m {
+    @media (max-width: breakpoints(desktop-m)) {
+      @content;
+    }
+  }
+
+  @else if $size==desktop-l {
+    @media (max-width: breakpoints(desktop-l)) {
+      @content;
+    }
+  }
+}
+
+@function breakpoints($device-width) {
+  @return map-get($breakpoints, $device-width);
+}

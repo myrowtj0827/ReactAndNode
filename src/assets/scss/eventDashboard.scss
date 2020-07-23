@@ -1,0 +1,689 @@
+/**
+ * Event Dashboard Page
+ */
+
+$color-employees: #4743ed;
+.event-chat-contents {
+  padding-top: 10px;
+
+  .card-padding {
+    padding-bottom: 30px;
+  }
+
+  .employees-bg-left {
+    padding-left: 280px;
+
+    @include responsive(lapDeskTop) {
+      width: 100%;
+    }
+
+    @include responsive(phoneTablet) {
+      padding-left: 0;
+    }
+  }
+
+  .right-padding-2 {
+    padding-top: 30px;
+    padding-right: 20px;
+
+    @include responsive(desktop) {
+      width: 100%;
+    }
+
+    @include responsive(lapTablet) {
+      padding-right: 0;
+    }
+
+    .graphics-width {
+      padding-right: 20px;
+      width: 78%;
+
+      @include responsive(desktop) {
+        padding-right: 0;
+        width: 100%;
+      }
+    }
+
+    .ticket-show {
+      width: 22%;
+
+      @include responsive(desktop) {
+        padding-right: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  .event-card {
+    font-size: 1rem;
+    background-color: white;
+
+    @include responsive(lapTablet) {
+      margin-top: 35px;
+    }
+
+    @include responsive(phone) {
+      margin-top: 30px;
+      font-size: 0.9rem;
+    }
+  }
+
+  .ticket-type-padding {
+    padding: 10px;
+
+    @include responsive(phoneTablet) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .name-top {
+      margin-top: 10px;
+    }
+
+    .canvas-top {
+      padding-top: 25px;
+    }
+
+    .ticket-left {
+      padding-left: 15px;
+    }
+
+    .ticket-name1, .ticket-name2, .ticket-name3 {
+      background-repeat: no-repeat;
+      background-size: 10px;
+      background-position: left top;
+
+      @include responsive(lapTablet) {
+        margin-left: 10px;
+      }
+    }
+
+    .ticket-name1 {
+      background-image: url('../images/company/eventDashboard/color3.png');
+    }
+
+    .ticket-name2 {
+      background-image: url('../images/company/eventDashboard/color2.png');
+    }
+
+    .ticket-name3 {
+      background-image: url('../images/company/eventDashboard/color1.png');
+    }
+
+    hr {
+      border: 0;
+      border-top: 2px solid #eee;
+      margin: 5px 0;
+    }
+  }
+
+  .ticket-tile, .name-font, .number-font {
+    font-family: 'Poppins Bold';
+  }
+
+  .ticket-tile {
+    font-size: 0.85rem;
+
+    @include responsive(lapTablet) {
+      .w3-right {
+        float: none !important;
+      }
+    }
+  }
+
+  .name-font {
+    font-size: 0.7rem;
+  }
+
+  .number-font {
+    font-size: 1.1rem;
+  }
+
+  .end-color {
+    font-size: 0.6rem;
+    font-weight: 200;
+    color: $color-employees;
+  }
+
+  .date-type {
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+
+  .date-type:hover {
+    color: $color-employees;
+  }
+
+  .event-padding {
+    padding: 20px;
+
+    @include responsive(phoneTablet) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .event-url {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 30px;
+
+      font-size: 1.2rem;
+      font-family: 'Poppins Bold';
+      font-weight: bold;
+      color: $color-employees;
+
+      @include responsive(lapTablet) {
+        padding-left: 0;
+      }
+    }
+
+    .eventName-com {
+      padding: 20px 30px;
+      font-size: 1.9rem;
+
+      .inner-edit {
+        margin-left: 25px;
+        margin-bottom: 10px;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+
+      @include responsive(largeLapTop) {
+        font-size: 1.6rem;
+      }
+    }
+
+    .w3-bar .w3-bar-item {
+      padding-top: 0;
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+  }
+
+  .right-padding {
+    padding-right: 20px;
+
+    @include responsive(lapTablet) {
+      padding-right: 0;
+    }
+
+    @include responsive(desktop) {
+      width: 50%;
+    }
+
+    @include responsive(lapTablet) {
+      width: 100%;
+    }
+  }
+
+  .right-padding-1 {
+    padding-right: 20px;
+
+    @include responsive(lapTablet) {
+      padding-right: 0;
+    }
+
+    @include responsive(desktop) {
+      width: 50%;
+    }
+
+    @include responsive(lapTablet) {
+      width: 100%;
+    }
+  }
+
+  .img-padding {
+    padding-left: 55px;
+  }
+
+  .small-bold {
+    padding-top: 15px;
+    font-size: 0.8rem;
+    font-family: 'Poppins Bold';
+  }
+
+  .small-blue {
+    font-size: 0.8rem;
+    color: $color-employees;
+
+    @include responsive(desktop) {
+      font-size: 0.5rem;
+    }
+
+    @include responsive(lapTablet) {
+      font-size: 0.8rem;
+    }
+  }
+
+  .large-txt {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+
+    @include responsive(desktop) {
+      font-size: 2rem;
+    }
+
+    @include responsive(lapTablet) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .ticket-sold-bg,
+  .page-views-bg,
+  .sales-bg,
+  .sold-out-bg {
+    background-repeat: no-repeat;
+    background-size: 45px;
+    background-position: left top;
+  }
+  .ticket-sold-bg {
+    background-image: url('../images/company/eventDashboard/tickets-sold.png');
+  }
+
+  .page-views-bg {
+    background-image: url('../images/company/eventDashboard/page-views.png');
+  }
+
+  .sales-bg {
+    background-image: url('../images/company/eventDashboard/sales.png');
+  }
+
+  .sold-out-bg {
+    background-image: url('../images/company/eventDashboard/sales-out.png');
+  }
+
+  /**
+   * Common Reports
+   */
+
+  .w3-bar-item-event {
+    padding: 0;
+    border:none;
+    float:left;
+    display:block;
+    outline:0;
+
+    @include responsive(phoneTablet) {
+      float: none;
+    }
+  }
+
+  .employeesEvent-bg {
+    margin: 0 auto;
+    padding-top: 40px;
+    width: 76%;
+
+    @include responsive(lapDeskTop) {
+      //padding-right: 12%;
+      padding-right: 20px;
+      width: 100%;
+    }
+
+    @include responsive(lapTablet) {
+      //padding: 35px $padding-employees 0 $padding-employees;
+      //width: 50%;
+      padding-right: 0;
+      text-align: center;
+    }
+
+    @include responsive(phoneTablet) {
+      width: 100%;
+    }
+
+    @include responsive(phone) {
+      padding: 30px 0 0 0;
+    }
+  }
+  .eventReports-contents {
+    padding-top: 10px;
+    padding-bottom: 100px;
+
+    .eventReports-card {
+      font-size: 0.9rem;
+      font-weight: 100;
+      color: #000000;
+      background-color: #ffffff;
+    }
+
+    .card-padding {
+      padding-bottom: 30px;
+
+      .tiny-font {
+        font-size: 0.6rem;
+      }
+    }
+
+    .eventReports-padding {
+      padding: 20px 15px 15px 15px;
+
+      .eventReports-option {
+        padding-left: 20px;
+        border: none;
+        border-bottom: 2px solid gray;
+        width: 100%;
+        height: 40px;
+        font-weight: 100;
+      }
+
+      .report-top {
+        padding-top: 15px;
+      }
+    }
+
+    .date-range {
+      padding-right: 10px;
+
+      @include responsive(lapDeskTop) {
+        padding-right: 0;
+      }
+    }
+
+    .attendee-status {
+      padding-left: 10px;
+
+      @include responsive(lapDeskTop) {
+        padding-left: 0;
+      }
+    }
+
+    .none-border-padding {
+      padding: 20px 15px 15px 15px;
+
+      .eventReports-option {
+        padding-left: 20px;
+        border: none;
+        width: 100%;
+        height: 40px;
+        font-weight: 100;
+      }
+
+      .order-info, .attendee-info {
+        font-size: 0.8rem;
+        font-family: 'Poppins Bold';
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .table-top {
+        padding-top: 15px;
+        padding-left: 20px;
+      }
+
+      hr {
+        border-top: 2px solid #eee;
+        margin: 15px 0;
+      }
+
+      .w3-table td, th {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+
+    .report-title {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 40px;
+
+      font-size: 1.2rem;
+      font-family: 'Poppins Bold';
+      font-weight: bold;
+      color: $color-employees;
+
+      @include responsive(lapTablet) {
+        padding-left: 0;
+      }
+    }
+
+    .event-url {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 30px;
+
+      font-size: 1.2rem;
+      font-family: 'Poppins Bold';
+      font-weight: bold;
+      color: $color-employees;
+
+      @include responsive(lapTablet) {
+        padding-left: 0;
+      }
+    }
+
+    .eventName-com {
+      padding: 20px 30px;
+      font-size: 1.9rem;
+
+      .inner-edit {
+        margin-left: 25px;
+        margin-bottom: 10px;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+    }
+
+    .gray-color {
+      color: gray;
+    }
+
+    .configure-columns {
+      padding-top: 20px;
+      padding-bottom: 0;
+      padding-left: 40px;
+
+      font-size: 0.95rem;
+      font-family: 'Poppins Bold';
+      font-weight: bold;
+
+      @include responsive(lapTablet) {
+        padding-left: 0;
+      }
+    }
+
+    .date-attendees {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 40px;
+
+      font-size: 0.95rem;
+      font-family: 'Poppins Bold';
+      font-weight: bold;
+
+      @include responsive(lapTablet) {
+        padding-left: 0;
+      }
+    }
+
+    .output {
+      padding-bottom: 10px;
+      padding-left: 40px;
+      font-size: 0.8rem;
+
+      @include responsive(lapTablet) {
+        padding-left: 0;
+      }
+    }
+
+    .configure-width {
+      padding-right: 10px;
+      width: 50%;
+
+      input {
+        padding-left: 40px;
+        font-size: 1rem;
+        border-bottom: 2px solid gray;
+        color: grey;
+
+        background-image: url('../images/company/search-icon.png');
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-position: left center;
+      }
+
+      @include responsive(lapDeskTop) {
+        padding-right: 0;
+        width: 100%;
+      }
+
+      @include responsive(lapTablet) {
+        width: 100%;
+      }
+    }
+
+    .show {
+      display: block!important;
+    }
+
+    .caret-padding {
+      padding-left: 6px;
+    }
+
+    .preview-padding {
+      padding-right: 30px;
+      padding-bottom: 30px;
+      font-size: 0.7rem;
+      color: $color-employees;
+
+      text-align: right;
+      cursor: pointer;
+
+      .icon-padding {
+        margin-right: 7px;
+        width: 12px;
+      }
+    }
+
+    .export {
+      padding-top: 10px;
+      padding-bottom: 15px;
+      font-size: 0.8rem;
+      font-family: 'Poppins Bold';
+      font-weight: bold;
+    }
+
+    .export-learn-more {
+      padding-top: 60px;
+      font-size: 0.85rem;
+      font-family: 'Poppins Bold';
+      font-weight: bold;
+      color: $color-employees;
+      cursor: pointer;
+
+      @include responsive(phoneTablet) {
+        padding-top: 5px;
+      }
+    }
+
+    .progress {
+      height: 10px;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      background: #f0f0f0;
+      overflow: visible;
+    }
+
+    .progress {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 0.8rem;
+      overflow: hidden;
+      font-size: 0.75rem;
+      background-color: #e9ecef;
+      border-radius: 0.25rem;
+    }
+
+    .order-check-width {
+      width: 25%;
+
+      @include responsive(lapDeskTop) {
+        width: 50%;
+      }
+
+      @include responsive(lapTablet) {
+        width: 100%;
+      }
+
+      @include responsive(phoneTablet) {
+        width: 50%;
+      }
+
+      @include responsive(phone) {
+        width: 100%;
+      }
+    }
+
+    /**
+      * CheckBox
+      */
+    .container-event {
+      display: block;
+      position: relative;
+      padding-top: 3px;
+      padding-left: 35px;
+      font-size: 0.9rem;
+      color: #000000;
+      cursor: pointer;
+    }
+
+    .container-event input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    .checkMark {
+      position: absolute;
+      border: 1px solid #4743ed;
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background-color: #ffffff;
+    }
+
+    .checkMark-gray {
+      background-color: #e7e7f3;
+    }
+
+    .container-event:hover input ~ .checkMark {
+      background-color: #4743ed;
+    }
+
+    .container-event input:checked ~ .checkMark {
+      background-color: #4743ed;
+    }
+
+    .checkMark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    .container-event input:checked ~ .checkMark:after {
+      display: block;
+    }
+
+    .container-event .checkMark:after {
+      left: 7px;
+      top: 5px;
+      width: 5px;
+      height: 7px;
+      border: solid white;
+      border-width: 0 1px 1px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+
+}
+
+

@@ -1,0 +1,129 @@
+/**
+ * Manage My Events Page
+ */
+
+.manageMyEvents-contents {
+  padding-top: 10px;
+  padding-bottom: 80px;
+
+  .manageMyEvents-title {
+    padding-top: 30px;
+    padding-left: 40px;
+
+    font-size: 1.2rem;
+    font-family: 'Poppins Bold';
+    font-weight: bold;
+    color: $color-employees;
+
+    @include responsive(lapTablet) {
+      padding-left: 0;
+    }
+
+    .manageMyEvents-date-settings {
+      padding-right: 9%;
+      text-align: right;
+
+      @include responsive(lapDeskTop) {
+        text-align: left;
+      }
+
+      @include responsive(lapTablet) {
+        padding-right: 0;
+        text-align: center;
+      }
+    }
+  }
+
+  .manageMyEvents-card-out {
+    padding: 30px 10px 10px 40px;
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: #000000;
+
+    @include responsive(lapTablet) {
+      padding: 30px 10px 10px 10px;
+    }
+
+    .title-left {
+      padding-left: 41.67%;
+
+      @include responsive(lapDeskTop) {
+        padding: 0;
+      }
+    }
+  }
+
+  .manageMyEvents-card {
+    font-size: 0.8rem;
+    font-weight: 100;
+    color: #000000;
+    background-color: #ffffff;
+
+    .manageMyEvents-title-padding {
+      padding: 30px 10px 30px 40px;
+
+      @include responsive(lapDeskTop) {
+        padding: 17px 10px;
+      }
+
+      @include responsive(lapTablet) {
+        padding: 17px 10px;
+      }
+
+      .manage-image {
+        width: 85%;
+
+        @include responsive(lapDeskTop) {
+          padding-bottom: 20px;
+          width: 100%;
+        }
+      }
+
+      .manage-bold, .month-bold {
+        font-size: 0.9rem;
+        font-family: 'Poppins Bold';
+        font-weight: bold;
+
+        @include responsive(lapDeskTop) {
+          padding-top: 20px;
+          padding-bottom: 10px;
+        }
+      }
+
+      .manage-bold {
+        padding-right: 30px;
+      }
+
+      .icon-edit-manage, .icon-delete-manage {
+        width: 25px;
+        height: 25px;
+        float: right;
+        cursor: pointer;
+
+        @include responsive(lapDeskTop) {
+          float: left;
+        }
+      }
+
+      @include responsive(desktop) {
+        .icon-edit-manage {
+          margin: 2px auto;
+          float: none;
+          text-align: center;
+        }
+      }
+
+      @include responsive(desktop) {
+        .icon-delete-manage {
+          margin: 2px auto;
+          float: none;
+          text-align: center;
+        }
+      }
+    }
+
+    .manage-medium {
+      padding-right: 40px;
+    }
+  }
+}

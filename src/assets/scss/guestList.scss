@@ -1,0 +1,363 @@
+/**
+ Guest List Page
+ */
+
+$color-employees: #4743ed;
+.guestLists-description {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 45px;
+  font-size: 0.8rem;
+
+  @include responsive(lapTablet) {
+    padding-left: 0;
+  }
+}
+
+.guestLists-contents {
+  padding-top: 10px;
+  padding-bottom: 100px;
+
+  .guestLists-card {
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  .card-padding {
+    padding-bottom: 30px;
+  }
+
+  .guestLists-padding {
+    padding: 10px 30px 20px 30px;
+
+    .table-top {
+      .th-font-padding {
+        margin-bottom: 20px;
+        font-size: 0.85rem;
+        font-family: 'Poppins Bold';
+        font-weight: bold;
+      }
+
+      .name-right-padding {
+        width: 35%;
+        padding-left: 25px;
+
+        @include responsive(largeLapTop) {
+          width: 21%;
+        }
+
+        @include responsive(lapTablet) {
+          padding-left: 5px;
+        }
+      }
+
+      .th-bottom {
+        padding-bottom: 30px;
+      }
+
+      .td-font {
+        font-size: 0.9rem;
+
+        .check-left-padding {
+          padding-left: 4%;
+        }
+
+        @include responsive(lapDeskTop) {
+          font-size: 0.75rem;
+        }
+
+        @include responsive(lapTablet) {
+          font-size: 0.6rem;
+        }
+
+        @include responsive(phoneTablet) {
+          font-size: 0.8rem;
+        }
+
+        @include responsive(phone) {
+          font-size: 0.7rem;
+        }
+      }
+
+      .plus-icon {
+        margin-left: 10%;
+        width: 23px;
+        cursor: pointer;
+      }
+
+      .delete-icon {
+        width: 15px;
+        cursor: pointer;
+      }
+
+      .delete-right-padding {
+        padding-right: 1.5%;
+      }
+    }
+
+    .w3-table td, th {
+      padding: 3px;
+    }
+
+    @include responsive(lapTablet) {
+      padding: 10px 10px 30px 10px;
+    }
+
+    .gray-bg {
+      background-color: #e7e7f3;
+    }
+
+    input {
+      padding-left: 20px;
+      font-size: 0.9rem;
+      border-bottom: 2px solid gray;
+      color: grey;
+    }
+
+    .upon-top {
+      padding-top: 55px;
+
+      .w3-bar .w3-bar-item {
+        padding: 6px;
+      }
+    }
+
+    .checkBox-width {
+      width: 27px;
+    }
+  }
+
+  .input-tb-padding {
+    padding-top: 15px;
+    padding-bottom: 10px;
+
+    .input-r {
+      padding-right: 10px;
+
+      @include responsive(lapDeskTop) {
+        padding-right: 0;
+      }
+    }
+
+    .input-l {
+      padding-left: 10px;
+
+      @include responsive(lapDeskTop) {
+        padding-top: 10px;
+        padding-left: 0;
+      }
+    }
+
+    @include responsive(lapDeskTop) {
+      padding-bottom: 0;
+    }
+  }
+
+  .blue-color {
+    color: $color-employees;
+  }
+
+  .add-list-padding {
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-bottom: 30px;
+    cursor: pointer;
+  }
+
+  .addQuests-left {
+    padding-bottom: 15px;
+    padding-left: 35px;
+    font-size: 0.9rem;
+    font-family: 'Poppins Bold';
+
+    @include responsive(lapTablet) {
+      padding-left: 0;
+    }
+  }
+
+  /**
+   * Quests Box
+   */
+  .text-box-start {
+    margin-top: 35px;
+    border: 2px solid gray;
+    width: 100%;
+    max-width: 70%;
+    height: 74px;
+    font-size: 2.2rem;
+    cursor: alias;
+
+    @include responsive(lapDeskTop) {
+      max-width: 100%;
+    }
+  }
+
+  .text-box-start:hover {
+    border: 2px solid #4743ed;
+  }
+
+  .start-finish-time {
+    display: flex;
+    padding-left: 25%;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    color: gray;
+
+    @include responsive(largeLapTop) {
+      padding-left: 18%;
+    }
+
+    @include responsive(lapDeskTop) {
+      padding-left: 40%;
+    }
+
+    .number-bold {
+      color: #000000;
+      font-family: 'Poppins Bold';
+    }
+  }
+
+  /**
+   * Button
+   */
+  .btn-padding {
+    margin: 0 auto;
+    padding-top: 30px;
+
+    .btn-save {
+      margin-right: 5px;
+      margin-left: 5px;
+      margin-bottom: 15px;
+
+      padding: 20px 12px;
+      border: 2px solid #4743ed;
+      width: 25%;
+      text-align: center;
+      text-decoration: none;
+
+      font-size: 1.2rem;
+      font-family: 'Poppins Bold';
+      font-weight: bold;
+
+      display: inline-block;
+      float: right;
+      color: #ffffff;
+      background-color: #4743ed;
+      cursor: pointer;
+    }
+
+    .btn-save:hover {
+      color: #000000;
+      background-color: #e7e7f3;
+    }
+
+    .btn-save-width {
+      margin-right: 35px;
+      width: 25%;
+
+      @include responsive(lapDeskTop) {
+        width: 40%;
+      }
+
+      @include responsive(lapTablet) {
+        margin-right: 15px;
+        width: 70%;
+      }
+
+      @include responsive(phoneTablet) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 94%;
+      }
+    }
+
+    .btn-quest-width {
+      width: 41%;
+
+      @include responsive(largeLapTop) {
+        width: 43%;
+      }
+
+      @include responsive(lapDeskTop) {
+        width: 45%;
+      }
+
+      @include responsive(lapTablet) {
+        width: 70%;
+      }
+
+      @include responsive(phoneTablet) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 98%;
+      }
+    }
+  }
+
+  /**
+   * CheckBox
+   */
+  .container-event {
+    display: block;
+    position: relative;
+    padding-top: 3px;
+    margin-bottom: 16px;
+    padding-left: 35px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .container-event input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkMark {
+    position: absolute;
+    border: 1px solid #4743ed;
+    top: 3px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff;
+  }
+
+  .container-event:hover input ~ .checkMark {
+    background-color: #4743ed;
+  }
+
+  .container-event input:checked ~ .checkMark {
+    background-color: #4743ed;
+  }
+
+  .checkMark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .container-event input:checked ~ .checkMark:after {
+    display: block;
+  }
+
+  .container-event .checkMark:after {
+    left: 7px;
+    top: 5px;
+    width: 5px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}

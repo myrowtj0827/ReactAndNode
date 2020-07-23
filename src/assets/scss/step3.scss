@@ -1,0 +1,395 @@
+/**
+ * Step 3 Page
+ */
+
+$padding-employees: 20px;
+$color-employees: #4743ed;
+
+.create-ticket-title {
+  padding-top: 30px;
+  font-size: 2.4rem;
+  font-family: 'Poppins Bold';
+  font-weight: bold;
+  color: $color-employees !important;
+
+  @include responsive(lapTablet) {
+    text-align: center;
+  }
+
+  @include responsive(phone) {
+    font-size: 2rem;
+  }
+}
+
+.create-ticket-step3-contents {
+  padding-top: 20px;
+  padding-bottom: 60px;
+
+  @include responsive(desktop) {
+    padding-bottom: 40px;
+  }
+
+  @include responsive(largeLapTop) {
+    padding-bottom: 20px;
+  }
+
+  .eventDetails-card {
+    font-size: 1rem;
+    background-color: #ffffff;
+  }
+
+  .create-padding-right {
+    padding-right: 20px;
+
+    @include responsive(lapDeskTop) {
+      padding-right: 0;
+      padding-bottom: 30px;
+    }
+  }
+
+  .create-padding-left {
+    padding-left: 20px;
+
+    @include responsive(lapDeskTop) {
+      padding-left: 0;
+      padding-bottom: 30px;
+    }
+  }
+
+  .create-ticket-padding {
+    padding: 17px 30px;
+
+    @include responsive(lapTablet) {
+      padding: 17px 10px;
+    }
+
+    .create-option, .create-option-left {
+      padding-left: 15px;
+      border: none;
+      border-bottom: 2px solid gray;
+      width: 100%;
+      height: 40px;
+      color: gray;
+
+      @include responsive(lapDeskTop) {
+        margin-top: 20px;
+      }
+    }
+
+    .create-option {
+      text-align: right;
+    }
+
+    .text-box {
+      padding-bottom: 10px;
+
+      textarea {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        min-height: 170px;
+      }
+    }
+  }
+
+  .add-ticket {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    font-size: 1.2rem;
+
+    .icon-add-paid {
+      margin-left: 10px;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+  }
+
+  .icon-edit-paid {
+    margin-left: 20%;
+    margin-top: 17px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+
+    @include responsive(desktop) {
+      margin: 17px auto;
+      text-align: center;
+    }
+  }
+
+  .icon-delete-paid {
+    margin-top: 17px;
+    width: 25px;
+    height: 25px;
+    float: right;
+    cursor: pointer;
+
+    @include responsive(desktop) {
+      margin: 17px auto;
+      float: none;
+      text-align: center;
+    }
+  }
+
+  .ticket-name-top-padding {
+    padding-top: 25px;
+
+    .settings-txt {
+      font-size: 1.2rem;
+      font-family: 'Poppins Bold';
+      font-weight: bold;
+      color: #4743ed;
+    }
+
+    .ticket-description {
+      padding-top: 30px;
+      padding-left: 15px;
+      font-size: 0.9rem;
+      color: gray;
+    }
+
+    /**
+     * CheckBox
+     */
+    .container-event {
+      display: block;
+      position: relative;
+      padding-top: 3px;
+      margin-bottom: 16px;
+      padding-left: 35px;
+      font-size: 0.9rem;
+      color: gray;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    .container-event input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    .checkMark {
+      position: absolute;
+      border: 1px solid #4743ed;
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background-color: #ffffff;
+    }
+
+    .container-event:hover input ~ .checkMark {
+      background-color: #4743ed;
+    }
+
+    .container-event input:checked ~ .checkMark {
+      background-color: #4743ed;
+    }
+
+    .checkMark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    .container-event input:checked ~ .checkMark:after {
+      display: block;
+    }
+
+    .container-event .checkMark:after {
+      left: 7px;
+      top: 5px;
+      width: 5px;
+      height: 7px;
+      border: solid white;
+      border-width: 0 1px 1px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    .text-box {
+      padding-bottom: 10px;
+
+      textarea {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .add-social-network, .ticket-sales-start {
+      padding-top: 30px;
+      font-size: 0.9rem;
+    }
+
+    .ticket-sales-start {
+      .w3-bar .w3-bar-item {
+        padding: 0;
+      }
+    }
+
+    .add-social-network {
+      padding-left: 15px;
+    }
+
+    .icon-add-free {
+      margin-left: 10px;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+
+
+    .ticket-start-finish {
+      .text-box-ticket-date {
+        margin-top: 8px;
+        border: 2px solid gray;
+        width: 80%;
+        height: 70px;
+        cursor: alias;
+
+        @include responsive(lapDeskTop) {
+          width: 100%;
+        }
+      }
+
+      .text-box-time {
+        margin-top: 5px;
+        border: 2px solid gray;
+        width: 100%;
+        height: 70px;
+        cursor: alias;
+      }
+
+      .text-box-ticket-date:hover {
+        border: 2px solid #4743ed;
+      }
+
+      .start-finish-time {
+        display: flex;
+        text-align: center;
+        vertical-align: middle;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .start-finish-time:hover {
+        border: 2px solid #4743ed;
+      }
+
+      .channel-padding {
+        padding-top: 8px;
+        padding-left: 10%;
+
+        @include responsive(lapDeskTop) {
+          padding-left: 0;
+        }
+
+        .sales-channel {
+          padding-left: 15px;
+          border: none;
+          border-bottom: 2px solid gray;
+          width: 100%;
+          height: 40px;
+          text-align: right;
+          color: gray;
+          cursor: pointer;
+
+          @include responsive(lapDeskTop) {
+            margin-top: 20px;
+          }
+        }
+
+        .sales-text-box {
+          font-size: 0.8rem;
+          color: gray;
+          text-align: right;
+        }
+      }
+
+      .text-box-half {
+        margin-left: 10px;
+        border: 2px solid gray;
+        width: 70px;
+        height: 70px;
+        cursor: alias;
+
+        @include responsive(lapDeskTop) {
+          margin-top: 10px;
+          margin-left: 0;
+          width: 100%;
+        }
+      }
+    }
+
+    hr {
+      margin: 40px 0 20px 0;
+    }
+
+    .check-up-icon {
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+    }
+
+  }
+
+  .eventDetails-card {
+    font-size: 1rem;
+    background-color: #ffffff;
+  }
+
+
+  /**
+ * step
+ */
+
+  .icon-top {
+    margin: 0 auto;
+    padding-top: 150px;
+    width: 100%;
+    max-width: 31%;
+
+    background-image: url('../../assets/images/company/edit/step03.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #e7e7f3;
+    background-size: contain;
+
+    @include responsive(desktop) {
+      max-width: 37%;
+    }
+
+    @include responsive(largeLapTop) {
+      max-width: 45%;
+    }
+
+    @include responsive(lapDeskTop) {
+      padding-top: 90px;
+      max-width: 60%;
+    }
+
+    @include responsive(lapTablet) {
+      padding-top: 70px;
+      max-width: 70%;
+    }
+
+    @include responsive(phoneTablet) {
+      padding-top: 110px;
+      max-width: 50%;
+    }
+
+    @include responsive(phone) {
+      padding-top: 110px;
+      max-width: 60%;
+    }
+  }
+}

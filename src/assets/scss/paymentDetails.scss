@@ -1,0 +1,273 @@
+/**
+ * Payment Detail Page
+ */
+
+$color-employees: #4743ed;
+.paymentsDetails-contents {
+  padding-top: 25px;
+  padding-bottom: 80px;
+  font-size: 0.9rem;
+
+  .payoneer-manage {
+    width: 80%;
+    cursor: pointer;
+  }
+
+  .edit-top-padding {
+    margin-top: 10px;
+    color: $color-employees;
+
+    .inner-edit {
+      margin-left: 20px;
+      margin-bottom: 10px;
+      width: 23px;
+      height: 23px;
+      cursor: pointer;
+
+      @include responsive(lapDeskTop) {
+        float: left;
+      }
+    }
+
+    .inner-delete {
+      margin-left: 20px;
+      margin-bottom: 10px;
+      width: 20px;
+      height: 23px;
+      cursor: pointer;
+
+      @include responsive(lapDeskTop) {
+        float: left;
+      }
+    }
+  }
+
+  .txt-payment-top {
+    margin-top: 20px;
+  }
+
+  .paymentsDetails-card {
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  .payment-padding {
+    padding: 17px 40px;
+
+    @include responsive(lapTablet) {
+      padding: 17px 10px;
+    }
+
+    .w3-bar .w3-bar-item {
+      padding-left: 0;
+      text-align: center;
+
+      @include responsive(lapDeskTop) {
+        padding-right: 4px;
+      }
+    }
+
+    @include responsive(phone) {
+      min-width: 360px;
+    }
+
+    .payment-txt-bold {
+      padding-bottom: 50px;
+      font-family: 'Poppins Bold';
+    }
+
+    /**
+     * Payment method Modal
+     */
+    .modal-cursor {
+      cursor: pointer;
+
+      .modal {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1050;
+        display: none;
+        overflow: hidden;
+        outline: 0;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .modal-dialog {
+        position: relative;
+        margin: 10px;
+        width: auto;
+        min-width: 260px;
+      }
+
+      .modal-content {
+        position: relative;
+        background-color: #ffffff;
+        background-clip: padding-box;
+      }
+
+      .modal-header {
+        padding: 0 15px 15px;
+        border-bottom: none;
+      }
+
+      .close {
+        font-size: 30px;
+        font-weight: 700;
+        opacity: 1;
+        color: #ffffff;
+      }
+
+      .modal-header .close {
+        margin-top: 0;
+        background-color: #4743ed;
+      }
+
+      .modal-body {
+        position: relative;
+        padding: 10px 20% 0 17%;
+        font-size: 0.9rem;
+
+        @include responsive(phoneTablet) {
+          padding: 10px 20px 30px;
+        }
+
+        .employees-font {
+          padding-bottom: 15px;
+          font-family: 'Poppins Bold';
+          font-size: 1.6rem;
+          font-weight: 700;
+        }
+
+        .modal-padding {
+          @include responsive(lapDeskTop) {
+            text-align: center;
+          }
+
+          .discount-option {
+            padding-left: 20px;
+            border: none;
+            border-bottom: 2px solid gray;
+            width: 100%;
+            height: 40px;
+            font-size: 0.8rem;
+            font-weight: 100;
+            text-align: right;
+            color: gray;
+          }
+        }
+
+        .modal-input-padding {
+          padding-top: 30px;
+        }
+
+        .input-right-padding {
+          padding-right: 15px;
+
+          @include responsive(lapDeskTop) {
+            padding-right: 0;
+          }
+        }
+
+        .input-left-padding {
+          padding-left: 15px;
+
+          @include responsive(lapDeskTop) {
+            padding-left: 0;
+          }
+        }
+
+        input {
+          padding-left: 20px;
+        }
+      }
+
+      input {
+        padding-left: 55px;
+        font-size: 0.8rem;
+        border-bottom: 2px solid gray;
+        color: grey;
+      }
+
+      .modal-description {
+        padding: 55px 55px 80px;
+        font-size: 0.9rem;
+        color: gray;
+
+        @include responsive(phone) {
+          padding: 30px 20px;
+        }
+      }
+
+      .txt-color {
+        color: $color-employees;
+      }
+
+      .modal-footer {
+        padding: 0;
+        border-top: none;
+        text-align: right;
+
+        .add-color {
+          width: 30%;
+          height: 75px;
+          font-size: 1.2rem;
+          font-family: 'Poppins Bold';
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #ffffff;
+          background-color: #4743ed;
+
+          @include responsive(lapDeskTop) {
+            width: 40%;
+            height: 60px;
+          }
+
+          @include responsive(phoneTablet) {
+            width: 100%;
+            height: 50px;
+          }
+        }
+      }
+
+      @media(min-width:544px) {
+        .modal-dialog {
+          margin-left: 19%;
+          max-width: 52%;
+        }
+      }
+
+      .modal-position {
+        padding-top: 250px;
+
+        .modal-content {
+          width: 100%;
+          max-width: 980px;
+        }
+      }
+    }
+  }
+
+  .master-card-top {
+    padding-top: 15px;
+  }
+
+  .add-payment-method {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 1.6rem;
+    color: $color-employees;
+    text-align: right;
+    cursor: pointer;
+
+    @include responsive(lapTablet) {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  }
+}

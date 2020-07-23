@@ -1,0 +1,250 @@
+/**
+ * Emails To Attendees Page
+ */
+
+$color-employees: #4743ed;
+.emails-description {
+  padding-top: 10px;
+  padding-bottom: 25px;
+  padding-left: 45px;
+  font-size: 0.9rem;
+
+  @include responsive(lapTablet) {
+    padding-left: 0;
+  }
+}
+
+.emails-contents {
+  padding-top: 10px;
+  padding-bottom: 100px;
+
+  .emails-card {
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+  .card-padding {
+    padding-bottom: 30px;
+  }
+
+  .emails-padding {
+    padding: 15px 30px 20px 30px;
+    @include responsive(lapTablet) {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    .emails-option {
+      padding-left: 20px;
+      border: none;
+      border-bottom: 2px solid gray;
+      width: 100%;
+      height: 40px;
+      font-weight: 100;
+    }
+
+    .text-box {
+      textarea {
+        width: 100%;
+        max-width: 100%;
+        min-height: 150px;
+      }
+    }
+  }
+
+  .search-width {
+    width: 100%;
+
+    input {
+      padding-left: 20px;
+      font-size: 0.9rem;
+      border-bottom: 2px solid gray;
+      color: grey;
+    }
+  }
+
+  .auto-txt {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    font-size: 0.9rem;
+    color: gray;
+  }
+
+  .add-padding {
+    padding-bottom: 30px;
+  }
+
+  .time-right-padding {
+    padding-right: 30px;
+
+    @include responsive(lapDeskTop) {
+      padding-right: 0;
+    }
+
+    .text-box-ticket-date {
+      margin-top: 8px;
+      border: 2px solid gray;
+      width: 100%;
+      height: 70px;
+      cursor: alias;
+    }
+
+    .text-box-ticket-date:hover {
+      border: 2px solid #4743ed;
+    }
+
+    .start-finish-time {
+      display: flex;
+      text-align: center;
+      vertical-align: middle;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  /**
+  * CheckBox
+  */
+  .container-event {
+    display: block;
+    position: relative;
+    padding-top: 3px;
+    padding-left: 35px;
+    font-size: 0.9rem;
+    color: #000000;
+    cursor: pointer;
+  }
+
+  .container-event input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    cursor: pointer;
+  }
+
+  .checkMark {
+    position: absolute;
+    border: 1px solid #4743ed;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff;
+  }
+
+  .checkMark-gray {
+    background-color: #e7e7f3;
+  }
+
+  .container-event:hover input ~ .checkMark {
+    background-color: #4743ed;
+  }
+
+  .container-event input:checked ~ .checkMark {
+    background-color: #4743ed;
+  }
+
+  .checkMark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .container-event input:checked ~ .checkMark:after {
+    display: block;
+  }
+
+  .container-event .checkMark:after {
+    left: 7px;
+    top: 5px;
+    width: 5px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  /**
+   * Button
+   */
+  .btn-padding {
+    margin: 0 auto;
+    padding-top: 60px;
+
+    .btn-save {
+      margin-right: 5px;
+      margin-left: 5px;
+      margin-bottom: 15px;
+
+      padding: 20px 12px;
+      border: 2px solid #4743ed;
+      width: 22%;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-family: 'Poppins Bold';
+      font-weight: bold;
+
+      display: inline-block;
+      color: #4743ed;
+      background-color: #e7e7f3;
+      cursor: pointer;
+
+      @include responsive(lapDeskTop) {
+        width: 40%;
+      }
+
+      @include responsive(lapTablet) {
+        width: 45%;
+        float: none;
+      }
+    }
+
+    .btn-save:hover {
+      color: #ffffff;
+      background-color: #4743ed;
+    }
+  }
+}
+
+/**
+ * create new button
+ */
+.create-new-email {
+  margin: 0 auto;
+  padding-top: 0;
+
+  .btn-save {
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+
+    padding: 20px 12px;
+    border: 2px solid #4743ed;
+    width: 93%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Poppins Bold';
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4743ed;
+    display: inline-block;
+    cursor: pointer;
+
+    @include responsive(lapTablet) {
+      float: none;
+    }
+  }
+
+  .btn-save:hover {
+    color: #4743ed;
+    background-color: #e7e7f3;
+  }
+}

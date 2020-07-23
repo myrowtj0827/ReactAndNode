@@ -1,0 +1,152 @@
+/**
+ * Step 1 Page
+ */
+
+$padding-employees: 20px;
+$color-employees: #4743ed;
+
+.eventDetails-step1-contents {
+  padding-top: 10px;
+  padding-bottom: 60px;
+
+  @include responsive(desktop) {
+    padding-bottom: 40px;
+  }
+
+  @include responsive(largeLapTop) {
+    padding-bottom: 20px;
+  }
+
+  .eventDetail-title {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+
+    font-size: 1.2rem;
+    font-family: 'Poppins Bold';
+    font-weight: bold;
+    color: $color-employees;
+
+    @include responsive(lapTablet) {
+      padding-left: 0;
+    }
+  }
+
+  .eventDetails-card {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    background-color: #ffffff;
+
+    .eventDetail-title-padding {
+      padding: 17px 40px;
+
+      @include responsive(lapTablet) {
+        padding: 17px 10px;
+      }
+
+      input {
+        padding-left: 24px;
+        font-size: 1rem;
+        border-bottom: 2px solid gray;
+        color: grey;
+      }
+
+      .eventDetails-state {
+        padding-right: 35px;
+
+        @include responsive(lapTablet) {
+          padding-right: 15px;
+        }
+
+        @include responsive(phoneTablet) {
+          padding-right: 0;
+        }
+      }
+
+      .eventDetails-zip {
+        padding-left: 35px;
+
+        @include responsive(lapTablet) {
+          padding-left: 15px;
+        }
+
+        @include responsive(phoneTablet) {
+          padding-top: 30px;
+          padding-left: 0;
+        }
+      }
+
+      .country-option {
+        padding-left: 24px;
+        border: none;
+        border-bottom: 2px solid gray;
+        width: 100%;
+        height: 40px;
+        color: gray;
+        cursor: pointer;
+      }
+
+      .map-padding {
+        padding: 50px 0 20px 0;
+        cursor: pointer;
+
+        .map-size {
+          width: 100%;
+        }
+      }
+
+      .text-box {
+        padding-bottom: 10px;
+
+        textarea {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  /**
+ * step
+ */
+  .icon-top {
+    margin: 0 auto;
+    padding-top: 150px;
+    width: 100%;
+    max-width: 31%;
+
+    background-image: url('../../assets/images/company/edit/step01.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #e7e7f3;
+    background-size: contain;
+
+    @include responsive(desktop) {
+      max-width: 37%;
+    }
+
+    @include responsive(largeLapTop) {
+      max-width: 45%;
+    }
+
+    @include responsive(lapDeskTop) {
+      padding-top: 90px;
+      max-width: 60%;
+    }
+
+    @include responsive(lapTablet) {
+      padding-top: 70px;
+      max-width: 70%;
+    }
+
+    @include responsive(phoneTablet) {
+      padding-top: 110px;
+      max-width: 50%;
+    }
+
+    @include responsive(phone) {
+      padding-top: 110px;
+      max-width: 60%;
+    }
+  }
+}

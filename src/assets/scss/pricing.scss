@@ -1,0 +1,353 @@
+.blue-div-pricing{
+  display: flex;
+  color: white;
+  background: rgb(77,57,224);
+  background-size: cover;
+  height: 24vh;
+
+  @include responsive(desktop-m) {
+    height: 26vh;
+  }
+
+  @include responsive(phone) {
+    height: 33vh;
+  }
+
+  .find-description {
+    padding-top: 40px;
+    padding-left: 20%;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 60%;
+    text-align: center;
+
+    @include responsive(desktop-m) {
+      max-width: 70%;
+    }
+
+    @include responsive(desktop-s) {
+      max-width: 76%;
+    }
+
+    @include responsive(lapDeskTop) {
+      padding-left: 0;
+      max-width: 85%;
+    }
+
+    @include responsive(tablet) {
+      max-width: 95%;
+    }
+
+    .txt-white-bold {
+      font-size: 1.8rem;
+      font-family: 'Poppins Bold';
+
+      @include responsive(phone) {
+        padding-bottom: 40px;
+      }
+    }
+
+    .txt-white-small {
+      font-size: 1rem;
+
+      @include responsive(phone) {
+        display: none;
+      }
+    }
+
+    .flex-card {
+      position: relative;
+      display: grid;
+      padding-top: 20px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-auto-rows: 1fr;
+      grid-column-gap: 25px;
+
+      @include responsive(phone) {
+        padding-bottom: 40px;
+        grid-template-columns: none;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 70%;
+        text-align: center;
+      }
+    }
+
+    .card-bg-padding {
+      padding: 30px;
+      text-align: center;
+      background-color: #ffffff;
+
+      @include responsive(phoneTablet) {
+        padding: 20px 10px;
+      }
+
+      @include responsive(phone) {
+        padding: 30px;
+        margin-bottom: 70px;
+      }
+    }
+
+    .black-txt {
+      font-size: 1rem;
+      font-family: 'Poppins Bold';
+      color: #000000;
+    }
+
+    .blue-txt {
+      padding-top: 10px;
+      padding-bottom: 20px;
+      font-size: 0.8rem;
+      color: rgb(77,57,224);
+    }
+
+    .blue-button1-get,
+    .blue-button2-get,
+    .red-button-get {
+      display: flex;
+      position: absolute;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 27%;
+      height: 55px;
+
+      justify-content: center;
+      vertical-align: middle;
+      align-items: center;
+      text-align: center;
+
+      font-size: 1.2rem;
+      font-family: 'Poppins Bold';
+
+      @include responsive(phone) {
+        max-width: 85%;
+      }
+    }
+
+    .blue-button1-get {
+      top: 87%;
+      left: 2%;
+      background-color: #4d39e0;
+
+      @include responsive(phone) {
+        top: 21%;
+        left: 7.5%;
+      }
+    }
+
+    .red-button-get {
+      top: 87%;
+      left: 36.5%;
+      background-color: red;
+
+      @include responsive(phone) {
+        top: 52%;
+        left: 7.5%;
+      }
+    }
+
+    .blue-button2-get {
+      top: 87%;
+      right: 1.7%;
+      background-color: #4d39e0;
+
+      @include responsive(phone) {
+        top: 82%;
+        right: 7.5%;
+      }
+    }
+  }
+}
+
+.bg-width {
+  margin: 30px auto 20px;
+  width: 100%;
+  max-width: 85%;
+
+  @include responsive(desktop-m) {
+    max-width: 98%;
+  }
+
+  .bg-padding-packages {
+    padding: 25px;
+    width: 25%;
+
+    @include responsive(desktop-xs) {
+      padding: 15px;
+    }
+
+    @include responsive(lapDeskTop) {
+      width: 50% !important;
+    }
+
+    @include responsive(phone) {
+      padding: 0;
+      margin: 0 auto;
+      width: 100% !important;
+    }
+  }
+
+  .discover-bg,
+  .enjoy-bg,
+  .control-bg,
+  .money-bg {
+    height: 100%;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .discover-bg {
+    background-image: url('../images/pck1.png');
+
+    @include responsive(phone) {
+      min-height: 250px;
+    }
+  }
+
+  .enjoy-bg {
+    background-image: url('../images/pck2.png');
+
+    @include responsive(phone) {
+      display: none;
+    }
+  }
+
+  .control-bg {
+    background-image: url('../images/pck3.png');
+
+    @include responsive(phone) {
+      display: none;
+    }
+  }
+
+  .money-bg {
+    background-image: url('../images/pck4.png');
+
+    @include responsive(phone) {
+      display: none;
+    }
+  }
+
+  .white-txt {
+    margin: 0 auto;
+    padding-top: 130px;
+    width: 100%;
+    max-width: 70%;
+    font-size: 1.5rem;
+    font-family: 'Poppins Bold';
+    text-align: center;
+
+    color: #ffffff;
+
+    @include responsive(phone) {
+      padding-top: 70px;
+    }
+  }
+}
+
+.table-align {
+  position: relative;
+  margin: 180px auto 0;
+
+  width: 100%;
+  max-width: 70%;
+  text-align: center;
+
+  @include responsive(desktop-m) {
+    max-width: 80%;
+  }
+
+  @include responsive(desktop-s) {
+    max-width: 90%;
+  }
+
+  @include responsive(lapDeskTop) {
+    max-width: 100%;
+  }
+
+  @include responsive(phone) {
+    margin-top: 630px;
+  }
+
+  @media screen and (max-width: 360px){
+    margin-top: 700px;
+  }
+
+  .justify-table-item {
+    display: none;
+
+    @include responsive(phoneTablet) {
+      display: block;
+      padding-bottom: 15px;
+      font-size: 0.9rem;
+      font-family: 'Poppins Bold';
+    }
+
+    .txt-hover:hover {
+      border-bottom: 2px solid #4743ed;
+      cursor: pointer;
+    }
+  }
+
+  @include responsive(phoneTablet) {
+    .item1_show_hide {
+      display: block;
+    }
+
+    .item2_show_hide {
+      display: none;
+    }
+
+    .item3_show_hide {
+      display: none;
+    }
+  }
+
+  .phone-width {
+    width: 23%;
+
+    @include responsive(desktop-xs) {
+      width: 30%;
+    }
+  }
+
+  .w3-table td:first-child {
+    padding-left: 0;
+  }
+
+  .w3-table td {
+    padding: 16px 0 !important;
+  }
+
+  .frequently-bold-txt {
+    padding: 70px 15px 25px;
+    font-size: 1.8rem;
+    font-family: 'Poppins Bold';
+
+    text-align: left;
+  }
+
+  .text-left-padding {
+    padding-bottom: 60px;
+    padding-left: 40px;
+    text-align: left;
+
+    @include responsive(phoneTablet) {
+      padding-left: 15px;
+    }
+
+    .small-txt-bold {
+      font-size: 0.9rem;
+      font-family: 'Poppins Bold';
+    }
+
+    .small-txt-normal {
+      padding-bottom: 40px;
+      line-height: 2rem;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+ 

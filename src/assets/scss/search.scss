@@ -1,0 +1,1067 @@
+.search-content {
+  width: 100vw;
+}
+
+.google-map-block {
+  // width: 100vw;
+}
+
+.border-top-black {
+  border-top: 1px solid #000000;
+}
+
+.border-right {
+  border-right: solid grey 1px;
+}
+
+.border-left {
+  border-left: solid grey 1px;
+}
+
+.border{
+  border: solid grey 1px;
+}
+
+.red-bubble {
+  border-radius: 50%;
+  background-color: red;
+  padding: 0px 7px;
+  color: white;
+  font-size: 14px;
+}
+
+.filter-container {
+  padding-left: 10px;
+  padding-right: 10px;
+  background: rgb(240,240,240)
+}
+
+.full-width {
+  width: 100%;
+  min-height: 100vh;
+
+  .tablet-sidebar-shown {
+    display: block;
+    @include responsive(tablet) {
+      display: none;
+    }
+  }
+
+  .sidebar-max-width.collapse {
+    display: none;
+  }
+
+  .sidebar-max-width.collapse.in {
+    display: none;
+
+    @include responsive(tablet) {
+      display: block;
+    }
+  }
+
+  .sidebar-max-width {
+    padding: 0 0 1.5rem !important;
+    width: 100%;
+    max-width: 18%;
+    min-width: 190px;
+
+    @include responsive(lapDeskTop) {
+      padding: 0.8rem !important;
+      max-width: 30%;
+      min-width: 320px;
+    }
+
+    @include responsive(tablet) {
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    .sidebar-scroll {
+      //overflow-y:scroll;
+      //max-height: 100vh;
+      //background:gray
+    }
+
+    .show {
+      display: block !important;
+    }
+
+    .more-details {
+      padding-top: 15px;
+      padding-bottom: 3px;
+      font-size: 0.8rem;
+      color: blue;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .menu-title {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      padding-left: 20px;
+      font-size: 0.75rem;
+      color: gray;
+      cursor: pointer;
+    }
+
+    .menu-title:hover {
+      border-left: 5px solid red;
+      background-color: #FFFFFF;
+    }
+
+    .location-font {
+      padding-top: 30px;
+      font-size: 0.85rem;
+      font-family: 'Poppins Bold';
+
+      @include responsive(tablet) {
+        padding-top: 0;
+      }
+    }
+
+    .padding-minus {
+      margin-top: 8px !important;
+      margin-bottom: 15px !important;
+
+      ::placeholder {
+        font-size: 0.9rem !important;
+      }
+    }
+
+    .form-control {
+      padding: .5rem 1.2rem;
+    }
+  }
+
+  .trending-margin {
+    padding-top: 40px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+
+    font-size: 0.8rem;
+    color: #4743ed;
+
+    .img-chart {
+      margin-bottom: 10px;
+      width: 25px;
+    }
+  }
+}
+
+.right-img-width{
+  padding: 0 0 1.6rem 0 !important;
+  margin: 1rem;
+  width: 100%;
+  max-width: 50%;
+  min-height: 100vh;
+
+  .form-control {
+    padding: 7px 1.2rem !important;
+  }
+
+  @include responsive(desktop-m) {
+    max-width: 53%;
+  }
+
+  @include responsive(tablet) {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  @include responsive(tablet) {
+    padding: 0.8rem !important;
+  }
+
+  @include responsive(phoneTablet) {
+    padding: 1.6rem !important;
+    max-width: 100%;
+  }
+
+  @include responsive(phone) {
+    padding: 1rem 0 !important;
+    min-width: 310px;
+  }
+
+
+  .d-flex-owner {
+    display: flex !important;
+
+    @include responsive(lapDeskTop) {
+      display: -ms-flexbox !important;
+    }
+
+    @include responsive(tablet) {
+      display: block !important;
+    }
+  }
+
+
+  .col-lg-6 {
+    @include responsive(desktop-m) {
+      flex: 0 0 100% !important;
+    }
+  }
+
+  .search-left-margin {
+    padding-left: 1rem;
+
+    .search-txt {
+      width: 250px;
+      font-size: 1.3rem;
+      font-family: 'Poppins Bold';
+
+      @include responsive(tablet) {
+        margin: 0 auto;
+        padding-bottom: 20px;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .w3-bar .w3-bar-item {
+        padding: 0 !important;
+      }
+    }
+  }
+
+  .tablet-shown-filter {
+    display: none;
+
+    @include responsive(tablet) {
+      display: block;
+
+      .img-filter {
+        padding-right: 15px;
+        margin: 5px 5px 0 5px;
+        width: 35px;
+        height: 35px;
+
+        cursor: pointer;
+      }
+
+      .red-txt-filter {
+        font-size: 1.1rem;
+        color: red;
+      }
+    }
+  }
+
+  .search-top {
+    margin-top: 10px;
+  }
+
+
+  .modify-padding {
+    margin-top: -30px;
+
+    @include responsive(lapDeskTop) {
+      margin-top: 0 !important;
+    }
+  }
+
+  .control-btns {
+    display: flex;
+    margin-top: 3px;
+    padding: 3px 0.94vw 0;
+
+    @include responsive(desktop-m) {
+      padding: 0;
+    }
+
+    @include responsive(lapDeskTop) {
+      padding: 15px 7px 0;
+    }
+
+    & > div {
+      width: 2vw;
+      height: 2vw;
+      border-radius: 50%;
+      cursor: pointer;
+
+      @include responsive(lapDeskTop) {
+        width: 30px;
+        height: 30px;
+      }
+
+      @include responsive(tablet) {
+        width: calc(30px + 0.5vw);
+        height: calc(30px + 0.5vw);
+      }
+    }
+
+    div:first-child {
+
+    }
+
+    .control-share-btn {
+      margin-right: 15px;
+      margin-left: 10px;
+      background-color: white;
+      background-image: url('../images/share-hover.png');
+      background-repeat: no-repeat;
+      background-size: 60%;
+      background-position: center;
+
+      &:hover {
+        background-color: #4743ed;
+        background-image: url('../images/share.svg');
+      }
+    }
+
+    .control-like-btn {
+      background-color: white;
+      background-image: url('../images/like.png');
+      background-repeat: no-repeat;
+      background-size: 60%;
+      background-position: center;
+
+      @include responsive(lapDeskTop) {
+        margin-right: 25px;
+      }
+
+      @media screen and ( max-width: 720px ){
+        margin-right: 0;
+      }
+
+      &.liked {
+        background-image: url('../images/like-hover.png');
+      }
+
+      &:hover {
+        background-image: url('../images/like-hover.png');
+      }
+    }
+  }
+
+  .social-hide {
+    display: none !important;
+
+    @include responsive(lapDeskTop) {
+      display: block !important;
+    }
+  }
+
+  .social-show {
+    display: block !important;
+  }
+
+  .search__btn {
+    width: 50px !important;
+  }
+}
+
+.right-map-width{
+
+  width: 100%;
+  max-width: 27%;
+
+  @include responsive(desktop-m) {
+    max-width: 24%;
+  }
+
+  @include responsive(lapDeskTop) {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+  }
+
+  @include responsive(phoneTablet) {
+    max-width: 100%;
+  }
+
+  @include responsive(phone) {
+    min-width: 310px;
+  }
+
+  .map-img-width {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.right-padding-top {
+  padding: 6.5rem 0 !important;
+
+  @include responsive(lapDeskTop) {
+    padding: 1rem 0 0 !important;
+  }
+
+  @include responsive(tablet) {
+    padding: 0.8rem !important;
+  }
+
+  @include responsive(phoneTablet) {
+    padding: 1.6rem !important;
+  }
+
+  @include responsive(phone) {
+    padding: 1rem 0 !important;
+  }
+}
+
+$lightred: #f12e50;
+$red: #ee0c4b;
+$darkred: #c80e3d;
+
+* {
+  box-sizing: border-box;
+  &:before, &:after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  background: black;
+}
+
+.main {
+  background: rgb(240,240,240);
+  width: 40%;
+  overflow: hidden;
+  z-index: 240;
+  width: 100%;
+  overflow: hidden;
+  .title {
+    color: #fff;
+    background: $darkred;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.2em;
+    padding: 1em;
+  }
+}
+
+.section {
+  position: relative;
+  width: 100%;
+
+  .toggleButton {
+    position: absolute;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    height: 3em;
+    width: 3em;
+    outline: 0;
+    border: 0;
+    background: none;
+    text-indent: -9999%;
+    pointer-events: none;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 8px;
+      width: 3px;
+      border-radius: .3em;
+      background: grey;
+      transform-origin: 50%;
+      top: 50%;
+      left: 50%;
+      transition: all .25s ease-in-out;
+      transform: translate(75%, -50%) rotate(45deg);
+    }
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 8px;
+      width: 3px;
+      border-radius: .3em;
+      background: grey;
+      transform-origin: 50%;
+      top: 50%;
+      left: 50%;
+      transition: all .25s ease-in-out;
+      transform: translate(-75%, -50%) rotate(-45deg);
+    }
+  }
+}
+
+.section.open {
+  button {
+    &:before, &:after {
+      height: 14px;
+    }
+
+    &:before {
+      transform: translate(0%, -50%) rotate(-45deg);
+    }
+
+    &:after {
+      transform: translate(0%, -50%) rotate(45deg);
+    }
+  }
+
+  .articlewrap {
+    height: auto;
+  }
+}
+
+.articlewrap {
+  height: 0;
+  overflow: hidden;
+  transition: all .2s ease-in;
+}
+
+.sectionhead {
+  width: 100%;
+  overflow: hidden;
+  background: rgb(240,240,240);
+  cursor: pointer;
+  font-weight: 700;
+  color: black;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 1em;
+  padding-right: 2.1em;
+}
+
+.article {
+  padding: 0 1em;
+  color: #333;
+  line-height: 1.3;
+}
+
+.input-range__label {
+  font-size: 0.6rem;
+}
+
+.input-range__track {
+  margin-left: 10px;
+  margin-right: 4px;
+  height: 0.1rem;
+  background: darkgrey;
+}
+
+.price-range-padding {
+  margin-top: 10px;
+}
+
+.input-range__slider{
+  margin-top: -4px;
+  height: 0.5rem !important;
+  width: 0.5rem;
+  background:rgb(77,57,224)
+}
+
+.react-calendar__tile--active {
+  background: rgb(77,57,224)
+}
+
+.filter-container {
+
+  .filter-tablet-shown {
+    display: block;
+    padding-top: 15px;
+
+    @include responsive(tablet) {
+      display: none !important;
+
+      .filter-padding {
+        padding-top: 25px;
+        padding-right: 20px;
+        padding-bottom: 35px;
+      }
+    }
+  }
+
+
+  .search__block {
+    width: 100%;
+    height: 40px;
+    margin: 0 17.75vw 0 auto;
+
+    .advanced-search {
+      border: none;
+      width: calc(100% - 2vw);
+      height: 40px;
+    }
+
+    .search__btn {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #4743ed;
+      cursor: pointer;
+
+      i {
+        font-size: 1.5625vw;
+
+        @include responsive(tablet) {
+          font-size: 3vw;
+        }
+
+        @include responsive(phone) {
+          font-size: 4.5vw;
+        }
+      }
+    }
+
+    ::placeholder {
+      font-size: 1rem;
+    }
+  }
+
+  .my-4 {
+    margin-top: 2rem !important;
+    margin-bottom: 3.5rem !important
+  }
+}
+
+.search-content {
+  .search__block {
+    width: 50%;
+    height: 40px;
+    color: #4743ed;
+    background-color: #ffffff;
+
+    @include responsive(desktop-xs) {
+      width: 60%;
+    }
+
+    @include responsive(lapDeskTop) {
+      width: 50%;
+    }
+
+    @include responsive(tablet) {
+      margin: auto;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .advanced-search {
+      border: none;
+      width: calc(100% - 3.125vw);
+      height: 40px;
+    }
+
+    .search__btn {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #4743ed;
+      cursor: pointer;
+
+      i {
+        font-size: 1.5625vw;
+
+        @include responsive(tablet) {
+          font-size: 3vw;
+        }
+
+        @include responsive(phone) {
+          font-size: 4.5vw;
+        }
+      }
+    }
+  }
+
+  /**
+   * adding style
+   */
+  .card-padding-search {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f0f0f0;
+
+    @include responsive(tablet) {
+      padding: 10px;
+    }
+  }
+
+  .card-padding-search:hover {
+    opacity: 0.7;
+    background-color: #eaf6ff;
+  }
+
+  /**
+   * Next & Previous
+   */
+  .nex-previous-btn {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+
+    @include responsive(tablet) {
+      padding-bottom: 60px;
+    }
+
+    @include responsive(phoneTablet) {
+      padding-bottom: 30px;
+    }
+
+    .text-box-start {
+      margin-top: 4px;
+      border: 1px solid #4743ed;
+      width: 40px;
+      height: 40px;
+
+      cursor: pointer;
+    }
+
+    .start-finish-time {
+      display: flex;
+      text-align: center;
+      vertical-align: middle;
+      justify-content: center;
+      align-items: center;
+    }
+
+    //.start-finish-time:hover {
+    //  color: #ffffff;
+    //  background-color: #4743ed;
+    //}
+
+    .back-next-btn {
+      width: 12px;
+      height: 12px;
+    }
+
+    .number-left {
+      padding-left: 20px;
+      padding-right: 10px;
+      font-size: 0.8rem;
+      cursor: pointer;
+    }
+
+    .number-right {
+      padding-right: 20px;
+      font-size: 0.8rem;
+      cursor: pointer;
+    }
+
+    .number-left:hover, .number-right:hover {
+      font-family: 'Poppins Bold';
+      color: #4743ed;
+    }
+  }
+
+
+  .number-btn-padding {
+    padding: 5px 15px 15px;
+  }
+
+  .slide-container {
+    margin: 0 auto;
+    width: 100%;
+
+    .col-md-6 {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .each-slide > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 300px;
+  }
+
+  .each-slide span {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: center;
+  }
+
+  .each-fade {
+    display: flex;
+  }
+
+  .each-fade .image-container {
+    width: 70%;
+
+    @include responsive(tablet) {
+      width: 100%;
+    }
+  }
+
+  .each-fade .image-container img {
+    width: 100%;
+  }
+
+  .each-fade h2 {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: #adceed;
+  }
+
+  .from-to-price {
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    font-size: 0.7rem;
+
+    background-color: #4743ed;
+    color: #FFFFFF;
+
+    @include responsive(lapDeskTop) {
+      position: relative;
+      padding: 4px;
+      text-align: center;
+    }
+  }
+
+  .search-padding {
+    padding: 10px 20px;
+
+    @include responsive(lapDeskTop) {
+      padding: 5px 15px;
+    }
+
+    @include responsive(phoneTablet) {
+      padding: 0 10px;
+    }
+
+    .responsive-font, .responsive-txt {
+      @include responsive(tablet) {
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+  .custom-input-location {
+    padding: 0;
+    border: solid 1px #000000 !important;
+    border-radius: 0;
+    font-size: 1.2rem;
+    background: inherit;
+    color: #000000;
+  }
+
+  ::placeholder {
+    color: gray;
+    font-size: 0.9rem;
+    opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder {
+    color: blue;
+  }
+
+  ::-ms-input-placeholder {
+    color: blue;
+  }
+}
+
+
+.help-card {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 2px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: inline-block;
+  transition: all .25s linear;
+  background-color: rgb(250, 250, 250);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .txt-padding {
+    padding: 10px 10px 0;
+  }
+
+  .description-font {
+    font-size: 0.8rem;
+    color: gray;
+
+    @include responsive(desktop-m) {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    @include responsive(lapDeskTop) {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+}
+
+.help-card:hover {
+  box-shadow: 0 10px 20px 0 rgba(71, 67, 237, 0.2);
+}
+
+.img-event {
+  max-width: 100%;
+  min-height: 160px;
+
+  @include responsive(desktop-m) {
+    min-height: 225px;
+  }
+
+  @include responsive(desktop-s) {
+    min-height: 235px;
+  }
+
+  @include responsive(lapDeskTop) {
+    min-height: 180px;
+  }
+
+  @include responsive(tablet) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 720px){
+    width: 100%;
+  }
+}
+
+.notification-container {
+
+  padding-bottom: 30px;
+
+  @include responsive(phoneTablet) {
+    .p-5 {
+      padding: 15px !important;
+    }
+  }
+
+  @include responsive(phone) {
+    .p-5 {
+      padding: 5px !important;
+    }
+  }
+
+  .position-choose {
+    position: relative;
+
+    @include responsive(lapDeskTop) {
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+
+      .w3-display-bottomright {
+        position: relative;
+      }
+    }
+
+    .img-event-notification {
+      padding-top: 20px;
+      width: 100%;
+      max-width: 80%;
+      min-height: 160px;
+
+      @include responsive(desktop-s) {
+        min-height: 200px;
+        max-width: 90%;
+      }
+
+      @include responsive(lapDeskTop) {
+        max-width: 50%;
+        min-height: 180px;
+      }
+
+      @include responsive(tablet) {
+        margin: 0 auto;
+        max-width: 70%;
+      }
+
+      @include responsive(phoneTablet) {
+        max-width: 85%;
+      }
+
+      @include responsive(phone) {
+        max-width: 100%;
+      }
+    }
+
+    .left-padding-txt {
+      padding-top: 20px;
+    }
+
+    .img-event1 {
+      width: 23px;
+
+      @include responsive(lapDeskTop) {
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
+.text-red {
+  color: red;
+  cursor: pointer;
+}
+
+.text-red:hover {
+
+}
+
+.link-cursor {
+  cursor: pointer;
+}
+
+.amountButton {
+  &-red {
+    background: red;
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    color: white;
+
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+
+  &-gray {
+    background:gray;
+    position: absolute;
+    width: 150px;
+    height: 35px;
+    color: white;
+
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+
+  &-blue {
+    background: rgb(77,57,224);
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    color: white;
+
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+}
+
+.high-padding {
+  padding-top: 50px;
+}

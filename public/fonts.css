@@ -1,0 +1,148 @@
+/* Theinhardt */
+/*@font-face {
+  font-family: "Theinhardt Bold";
+  src: url("fonts/Theinhardt-Bold.woff");
+}*/
+
+/* SF UI Text */
+/*@font-face {
+  font-family: "SF Ui Text Regular";
+  src: url("fonts/SFUIText-Regular.woff");
+}
+
+@font-face {
+  font-family: "SF Ui Text Medium";
+  src: url("fonts/SFUIText-Medium.woff");
+}
+
+@font-face {
+  font-family: "SF Ui Text Bold";
+  src: url("fonts/SFUIText-Bold.woff");
+}
+
+@font-face {
+  font-family: "SF Ui Text Semibold";
+  src: url("fonts/SFUIText-Semibold.woff");
+}
+
+@font-face {
+  font-family: "SF Ui Text Light";
+  src: url("fonts/SFUIText-Light.woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display Regular";
+  src: url("fonts/SFUIDisplay-Regular.woff");
+}
+
+@font-face {
+  font-family: "Cambria Bold";
+  src: url("fonts/Cambria-Bold.woff");
+}
+*/
+/* Akagi */
+/*
+@font-face {
+  font-family: "Akagi Semibold";
+  src: url("fonts/AkagiProSemibold.woff");
+}
+
+@font-face {
+  font-family: "Akagi Book";
+  src: url("fonts/AkagiProBook.woff");
+}
+
+@font-face {
+  font-family: "Akagi Medium";
+  src: url("fonts/AkagiProMedium.woff");
+}
+*/
+
+
+/* Tisa */
+
+
+/*@font-face {
+  font-family: "Tisa Pro";
+  src: url("fonts/ff-tisa-web-pro.woff");
+}*/
+
+/*@font-face {
+  font-family: "Tisa Pro Medium";
+  src: url("fonts/ff-tisa-web-pro.woff");
+}*/
+
+
+/* graphik */
+
+/*@font-face {
+  font-family: "Graphik Semibold";
+  src: url("fonts/graphik-semibold-webfont.woff");
+}
+*/
+
+/* helvetica */
+
+@font-face {
+  font-family: "Helvetica Neue Cyr Roman";
+  src: url("fonts/HelveticaNeueCyr-Roman.woff");
+}
+
+@font-face {
+  font-family: "Helvetica Neue Cyr Bold";
+  src: url("fonts/HelveticaNeueCyr-Bold.woff");
+}
+
+@font-face {
+  font-family: "Helvetica Neue Cyr Light";
+  src: url("fonts/HelveticaNeueCyr-Light.woff");
+}
+
+@font-face {
+  font-family: "Helvetica Neue Cyr Medium";
+  src: url("fonts/HelveticaNeueCyr-Medium.woff");
+}
+
+
+
+/* NotoSans */
+/*
+@font-face {
+  font-family: "NotoSans Medium";
+  src: url("fonts/NotoSans-Medium.woff");
+}*/
+
+
+/*@font-face {
+  font-family: 'publicotext';
+  src: url('fonts/publicotext-roman-webfont.ttf') format('truetype');
+}*/
+
+/* Publico */
+
+@font-face {
+  font-family: 'Publico Roman';
+  src: url('fonts/PublicoText-Roman-Web.woff2') format('woff2'),
+  url('fonts/PublicoText-Roman-Web.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Publico Semibold';
+  src: url('fonts/PublicoText-Semibold-Web.woff2') format('woff2'),
+  url('fonts/PublicoText-Semibold-Web.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Publico Bold';
+  src: url('fonts/PublicoText-Bold-Web.woff2') format('woff2'),
+  url('fonts/PublicoText-Bold-Web.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}

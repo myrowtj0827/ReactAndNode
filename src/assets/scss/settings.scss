@@ -1,0 +1,1076 @@
+.settings-headings {
+    font-size: 1rem;
+    font-family: 'Poppins Bold';
+}
+
+.psw-padding-add {
+  padding-bottom: 30px;
+}
+
+.tablet-center {
+  @include responsive(tablet) {
+    text-align: center;
+  }
+}
+
+.settings-content {
+  padding: 10px 0 !important;
+}
+
+.settings-page .container {
+  @include responsive(tablet) {
+    min-height: auto !important;
+  }
+}
+
+.settings-content > .mx-5 {
+  @include responsive(phone) {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+
+.settings-content > .px-5 {
+  @media screen and ( max-width: 720px ){
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+}
+
+.attending-width {
+  width: 70%;
+
+  @include responsive(phone) {
+    width: 100%;
+
+    .btn-save {
+      margin: 0;
+    }
+  }
+
+  .btn-paddings {
+    margin: 0 auto;
+    padding-top: 100px;
+
+    .btn-save {
+      margin-left: 5px;
+      margin-bottom: 15px;
+
+      padding: 20px 12px;
+      border: 2px solid #4743ed;
+      width: 22%;
+      text-align: center;
+      text-decoration: none;
+
+      font-size: 1.2rem;
+      font-family: 'Poppins Bold';
+      font-weight: bold;
+
+      display: inline-block;
+      float: right;
+      color: #ffffff;
+      background-color: #4743ed;
+      cursor: pointer;
+
+      @include responsive(desktop-m) {
+        width: 35%;
+      }
+
+      @include responsive(lapDeskTop) {
+        width: 40%;
+      }
+
+      @include responsive(tablet) {
+        width: 70%;
+      }
+
+      @include responsive(phone) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+      }
+    }
+
+    .btn-save:hover {
+      color: #000000;
+      background-color: #e7e7f3;
+    }
+  }
+}
+
+.email-filed-width {
+  width: 20%;
+
+  @include responsive(desktop-m) {
+    width: 30%;
+  }
+
+  @include responsive(desktop-s) {
+    width: 35%;
+  }
+
+  @include responsive(lapDeskTop) {
+    width: 100%;
+  }
+}
+
+.user-form-width {
+  width: 650px;
+
+  @include responsive(lapDeskTop) {
+    width: 100%;
+  }
+}
+
+.rewards-width {
+  padding: 50px 20px;
+  max-width: 70%;
+
+  @include responsive(desktop-m) {
+    max-width: 80%;
+  }
+
+  @include responsive(desktop-s) {
+    max-width: 100%;
+  }
+
+  .point-rewards {
+    padding-bottom: 30px;
+    font-size: 1.5rem;
+    font-family: 'Poppins Bold';
+  }
+
+  .top-padding {
+    padding-top: 10px;
+  }
+
+  .flex-grid-icon {
+    display: grid;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-column-gap: 25px;
+
+    font-family: 'Poppins Bold';
+
+    @include responsive(phone) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.fx-0 {
+    font-size: 2.5rem; 
+}
+
+.fx-1 {
+    font-size: 1.2rem;
+}
+
+.fx-2 {
+    font-size: 1rem; 
+}
+
+.fx-3 {
+    font-size: 0.8rem; 
+}
+
+strong {
+   font-family: 'Poppins Bold'; 
+}
+
+.modal-overlay-password {
+  background: rgba(11, 11, 247, 0.25);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0vw;
+}
+
+.bottom-adding {
+  @include responsive(phone) {
+    margin-bottom: 20px;
+  }
+}
+
+.change-password {
+    .modal-overlay {
+    background: rgba(11, 11, 247, 0.25);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 16vw;
+    }
+
+    .modal-container {
+        width: auto;
+    }
+
+  .reason-option {
+    margin-top: 40px;
+    margin-left: 20px;
+    padding-left: 20px;
+    border: none;
+    border-bottom: 2px solid gray;
+    width: 70%;
+    height: 40px;
+    color: gray;
+    background-color: #f9f9f9;
+    cursor: pointer;
+
+    @include responsive(tablet) {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 70%;
+      text-align: center;
+    }
+  }
+
+  .left-padding {
+    margin-left: 20px;
+    padding-left: 20px;
+    width: 70%;
+    background-color: #f9f9f9;
+
+    @include responsive(tablet) {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 70%;
+      text-align: center;
+    }
+  }
+
+  .current-psw {
+    margin-left: 20px;
+    padding-left: 20px;
+    width: 40%;
+    background-color: #f9f9f9;
+
+    @include responsive(tablet) {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 70%;
+      text-align: center;
+    }
+  }
+
+  .please-top {
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+}
+
+
+
+.blue-button {
+    background: #5301ec;
+    color: white;
+    right: 0;
+    top: 0;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    border-radius: 0;
+}
+
+.red-button {
+  background: red;
+  color: white;
+  right: 0;
+  top: 0;
+  width: 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 7vh;
+  border-radius: 0;	
+}
+
+.progress-bar {
+    background: rgb(83,1,236);
+}
+
+.progress {
+    height: 0.6rem;
+    font-size: 0.5rem;
+}
+
+.payment-button-outline {
+   border: solid 1px rgb(83,1,236);
+   cursor: pointer;
+   color:  rgb(83,1,236);
+   width: 16vw;
+
+  @include responsive(lapDeskTop) {
+    width: 20vw;
+  }
+
+  @include responsive(tablet) {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 50vw;
+
+    text-align: center;
+
+    @include responsive(phone) {
+      max-width: 100%;
+    }
+  }
+}
+
+.billing-width {
+  width: 40%;
+
+  @include responsive(desktop-m) {
+    width: 55%;
+  }
+
+  @include responsive(desktop-s) {
+    width: 75%;
+  }
+
+  @include responsive(lapDeskTop) {
+    width: 100%;
+  }
+}
+
+.checkbox {
+    padding-left: 20px;
+}
+
+.checkbox label {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 5px;
+}
+
+.checkbox label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: 0;
+  margin-left: -20px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  background-color: #fff;
+  -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.checkbox label::after {
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 0;
+  margin-left: -20px;
+  padding-left: 3px;
+  padding-top: 1px;
+  font-size: 11px;
+  color: #555555;
+}
+
+.checkbox input[type="checkbox"],
+.checkbox input[type="radio"] {
+  opacity: 0;
+  z-index: 1;
+}
+
+.checkbox input[type="checkbox"]:focus + label::before,
+.checkbox input[type="radio"]:focus + label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.checkbox input[type="checkbox"]:checked + label::after,
+.checkbox input[type="radio"]:checked + label::after {
+  font-family: "FontAwesome";
+  content: "\f00c";
+}
+
+.checkbox input[type="checkbox"]:disabled + label,
+.checkbox input[type="radio"]:disabled + label {
+  opacity: 0.65;
+}
+
+.checkbox input[type="checkbox"]:disabled + label::before,
+.checkbox input[type="radio"]:disabled + label::before {
+  background-color: #eeeeee;
+  cursor: not-allowed;
+}
+
+.checkbox.checkbox-circle label::before {
+  border-radius: 50%;
+}
+
+.checkbox.checkbox-inline {
+  margin-top: 0;
+}
+
+.checkbox-primary input[type="checkbox"]:checked + label::before,
+.checkbox-primary input[type="radio"]:checked + label::before {
+  background-color:rgb(83,1,236);
+  border-color: rgb(83,1,236);
+}
+
+.checkbox-primary input[type="checkbox"]:checked + label::after,
+.checkbox-primary input[type="radio"]:checked + label::after {
+  color: #fff;
+}
+
+.checkbox.checkbox-sm label::before {
+  width: 30px;
+  height: 30px;
+  top: -13px;
+}
+
+.checkbox.checkbox-sm label::after {
+  width: 30px;
+  height: 30px;
+  padding-left: 4px;
+  font-size: 20px;
+  left: 1px;
+  top: -13px;
+}
+
+.checkbox.checkbox-sm label {
+  padding-left: 18px;
+  top: 13px;
+}
+
+.checkbox.checkbox-md label::before {
+  width: 34px;
+  height: 34px;
+  top: -17px;
+}
+
+.checkbox.checkbox-md label::after {
+  width: 34px;
+  height: 34px;
+  padding-left: 4px;
+  font-size: 24px;
+  left: 1px;
+  top: -18px;
+}
+
+.checkbox.checkbox-md label {
+  padding-left: 22px;
+  top: 17px;
+}
+
+.checkbox.checkbox-lg label::before {
+  width: 46px;
+  height: 46px;
+  top: -28px;
+}
+
+.checkbox.checkbox-lg label::after {
+  width: 46px;
+  height: 46px;
+  padding-left: 4px;
+  font-size: 36px;
+  left: 1px;
+  top: -31px;
+}
+
+.checkbox.checkbox-lg label {
+  padding-left: 34px;
+  top: 32px;
+}
+
+// user account
+.blue-bg {
+  position: relative;
+  padding-top: 20px;
+  //height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-image: url('../images/blueBanner.png');
+
+  .profile-width {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 55%;
+
+    @include responsive(desktop-s) {
+      margin-top: 150px;
+      max-width: 70%;
+    }
+
+    @include responsive(lapDeskTop) {
+      max-width: 90%;
+    }
+
+    .justify-between {
+      margin: 30px auto 15px auto;
+      width: 100%;
+
+      .shown-phoneTablet-user {
+        display: none;
+
+        @include responsive(phoneTablet) {
+          display: block;
+          padding-top: 30px;
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    .justify-between > div {
+      display: flex;
+      justify-content: space-between;
+
+      @include responsive(phoneTablet) {
+        display: block;
+        justify-content: initial;
+        text-align: center;
+      }
+    }
+
+    .user-name {
+      font-size: 2rem;
+      font-family: 'Poppins Bold';
+      color: #ffffff;
+    }
+
+    .edit-icon {
+      width: 23px;
+      height: 23px;
+      cursor: pointer;
+
+      @include responsive(phoneTablet) {
+        display: none;
+      }
+    }
+
+    .w3-card {
+      background-color: #ffffff !important;
+    }
+
+    .user-card-padding {
+      padding: 20px 30px;
+
+      @include responsive(phoneTablet) {
+        padding: 20px;
+      }
+
+      .hidden-phoneTablet {
+        display: block;
+
+        @include responsive(phoneTablet) {
+          display: none;
+        }
+      }
+
+      .title-top {
+        padding-top: 50px;
+
+        @include responsive(phoneTablet) {
+          padding-top: 15px;
+        }
+      }
+
+      .ticket-img-width {
+        position: relative;
+        width: 60%;
+
+        @include responsive(tablet) {
+          margin: 0 auto !important;
+          width: 100%;
+          max-width: 100%;
+          text-align: center !important;
+
+          .w3-right {
+            float: none;
+          }
+        }
+
+        .img-event-user {
+          position: relative;
+          max-width: 70%;
+          min-height: 160px;
+
+          @include responsive(desktop-m) {
+            max-width: 80%;
+            min-height: 225px;
+          }
+
+          @include responsive(desktop-s) {
+            min-height: 235px;
+          }
+
+          @include responsive(tablet) {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 100%;
+            min-height: 180px;
+            max-height: 250px;
+            text-align: center;
+          }
+
+          @include responsive(tablet) {
+            width: 100%;
+          }
+
+          @media screen and (max-width: 720px){
+            width: 100%;
+          }
+        }
+
+        .btn-red {
+          left: 9vw;
+          padding: 15px;
+          font-size: 0.8rem;
+          background-color: red;
+          color: #ffffff;
+
+          @include responsive(desktop-m) {
+            left: 6vw;
+          }
+
+          @include responsive(desktop-s) {
+            left: 8vw;
+          }
+
+          @include responsive(lapDeskTop) {
+            left: 10vw;
+          }
+
+          @include responsive(tablet) {
+            left: 1vw;
+          }
+        }
+      }
+
+      .ticket-description-width {
+        width: 40%;
+
+        @include responsive(tablet) {
+          margin: 0 auto;
+          width: 100%;
+          max-width: 100%;
+          text-align: center;
+        }
+
+        .description-padding {
+          padding: 5px 20px;
+
+          .text-font {
+            font-size: 1.3rem;
+            font-family: 'Poppins Bold';
+          }
+
+          .position-top {
+            padding-top: 70px;
+            font-size: 0.9rem;
+
+            @include responsive(tablet) {
+              padding-top: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .past-ticket-padding {
+      padding-top: 50px;
+      padding-bottom: 30px;
+
+      @include responsive(tablet) {
+        padding-top: 20px;
+      }
+    }
+
+    .img4-width {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 80%;
+      text-align: center;
+
+      @include responsive(desktop-m) {
+        max-width: 96%;
+      }
+
+      .flex-grid-img {
+        display: grid;
+        padding-top: 20px;
+        padding-bottom: 50px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-rows: 1fr;
+        grid-column-gap: 25px;
+
+        font-size: 1rem;
+        font-family: 'Poppins Bold';
+
+        @include responsive(phoneTablet) {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .img-bottom-padding {
+          padding-bottom: 10px;
+
+          @include responsive(phoneTablet) {
+            padding-top: 20px;
+          }
+        }
+      }
+    }
+
+    .padding-left {
+      padding-left: 30px;
+
+      @include responsive(tablet) {
+        padding-left: 0;
+        margin: 20px auto;
+        text-align: center;
+      }
+    }
+
+    .bold-txt-font {
+      padding-left: 30px;
+      font-size: 1.4rem;
+
+      @include responsive(tablet) {
+        padding-left: 0;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+
+    .slider-container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 60vw;
+      text-align: center;
+
+      @include responsive(desktop-s) {
+        max-width: 80vw;
+      }
+
+      @include responsive(phone) {
+        max-width: 85vw;
+      }
+
+      .slick-card {
+        display: block;
+        border-bottom: solid red 5px;
+        background: rgb(240,240,240);
+        width: 18vw;
+        height: 150px;
+        border-radius: 2px;
+        margin: 10px;
+        display: inline-block;;
+        transition: all .25s linear;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+      }
+
+      .img-event2 {
+        max-width: 100%;
+        min-height: 160px;
+
+        @include responsive(desktop-m) {
+          min-height: 2px;
+        }
+
+        @include responsive(desktop-s) {
+          min-height: 170px;
+        }
+
+        @include responsive(tablet) {
+          width: 100%;
+          min-height: 150px;
+        }
+
+        @include responsive(phone) {
+          margin: 0 auto;
+          width: 100%;
+          max-width: 300px;
+        }
+
+        @media screen and (max-width: 720px){
+          width: 100%;
+        }
+      }
+
+    }
+  }
+}
+
+.blue-bg > .overlay-div {
+  top: 5%;
+}
+
+.overlay-div {
+  .user-image {
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 10px 20px 0 rgba(71, 67, 237, 0.2);
+    position: absolute;
+    left: 12%;
+    width: 120px;
+    height: 120px;
+    z-index: 8;
+
+    @include responsive(desktop-s) {
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+
+      bottom: 5%;
+      left: 0;
+      top: -50%;
+    }
+  }
+}
+
+.text-black {
+  color: black;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.ticket-button {
+  &-red {
+    background: red;
+    width: 150px;
+  height: 35px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  }
+
+  &-blue {
+    background: rgb(77,57,224);
+    width: 150px;
+  height: 35px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  }
+}
+
+.tickets-header {
+  position: absolute;
+  top: 36%;
+  display: flex;
+}
+
+.ticketButton {
+  &-red {
+    background: red;
+    position: absolute;
+    width: 150px;
+    height: 35px;
+    color: white;
+    bottom: 35%;
+    left: -15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+
+  &-blue {
+    background: rgb(77,57,224);
+    position: absolute;
+  width: 150px;
+  height: 35px;
+  color: white;
+
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  }
+}
+
+.qr-tickets{
+  right: 40%;
+}
+
+/**
+ * settings/tickets
+ */
+.tickets-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 50%;
+  text-align: center;
+
+  @include responsive(desktop-m) {
+    max-width: 60%;
+  }
+
+  @include responsive(desktop-s) {
+    max-width: 70%;
+  }
+
+  @include responsive(lapDeskTop) {
+    max-width: 80%;
+  }
+
+  @include responsive(tablet) {
+    max-width: 90%;
+  }
+
+  .ticket-title {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 2.2rem;
+    font-family: 'Poppins Bold';
+    color: #000000;
+    text-align: left;
+
+    @include responsive(phoneTablet) {
+      text-align: center;
+    }
+  }
+
+  .ticket-cart-padding {
+    display: flex;
+    position: relative;
+    height: 150px;
+
+    background-image: url('../images/headerImg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include responsive(phone) {
+      height: 250px;
+    }
+
+    .txt-style {
+      padding-left: 15vw;
+
+      @include responsive(desktop-xs) {
+        padding-left: 20vw;
+      }
+
+      @include responsive(tablet) {
+        padding-left: 30vw;
+      }
+
+      @include responsive(phone) {
+        padding-top: 150px;
+        padding-right: 5%;
+        padding-left: 5%;
+      }
+    }
+
+    .big-txt-font {
+      font-size: 1.4rem;
+      font-family: 'Poppins Bold';
+      color: #ffffff;
+    }
+  }
+
+  .justify-middle-txt {
+    display: flex;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ticket-description {
+    padding: 30px 15px;
+    text-align: left;
+
+    @include responsive(tablet) {
+      padding: 30px 5px;
+    }
+
+    @include responsive(phoneTablet) {
+      .description-center {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .qr-code-top {
+        padding-top: 40px;
+      }
+    }
+
+    .txt-bold {
+      font-family: 'Poppins Bold';
+      font-weight: bold;
+    }
+
+    .large-font {
+      padding-bottom: 20px;
+      font-size: 2.5rem;
+
+      @include responsive(tablet) {
+        font-size: 2.2rem;
+      }
+    }
+
+    .medium-font {
+      font-size: 2rem;
+
+      @include responsive(tablet) {
+        font-size: 1.8rem;
+      }
+    }
+
+    .date-font {
+      font-size: 1.3rem;
+    }
+
+    .location-top {
+      padding-top: 20px;
+    }
+
+    .download-link {
+      margin: 50px auto 0;
+      width: 100%;
+
+      .icon-size {
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    .download-link > div {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  hr {
+    padding-top: 30px;
+    border-top: 1px solid #000000;
+  }
+}

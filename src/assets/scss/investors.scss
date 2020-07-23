@@ -1,0 +1,126 @@
+
+.lorem-container-img{
+    min-width: 340px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../../assets/images/inv5.png");
+
+
+    @include responsive(phoneTablet) {
+        .p-5 {
+            padding: 1rem !important;
+        }
+    }
+
+    @include responsive(phone) {
+        .p-5 {
+            padding: 1rem 0 !important;
+        }
+    }
+
+    .lorem-container{
+        margin: 0 auto;
+        width: 60vw;
+        text-align: center;
+
+        @include responsive(desktop-m) {
+            width: 70vw;
+        }
+
+        @include responsive(desktop-s) {
+            width: 80vw;
+        }
+
+        @include responsive(lapDeskTop) {
+            width: 85vw;
+        }
+
+        @include responsive(tablet) {
+            width: 90vw;
+        }
+
+        @include responsive(phone) {
+            width: 100vw;
+        }
+
+        .card-margin {
+            padding: 0 1vw;
+
+            @include responsive(desktop-s) {
+                padding: 0 0.5vw;
+            }
+
+            @include responsive(tablet) {
+                padding: 0;
+            }
+        }
+
+        .card-width {
+            width: 33.33333%;
+
+            @include responsive(tablet) {
+                width: 100%;
+            }
+        }
+
+        .lorem-card {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 2px;
+            border-bottom: solid red 7px;
+            width: 15vw;
+
+            height: auto;
+            transition: all .25s linear;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: rgb(240,240,240);
+            //   box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.4);
+
+            @include responsive(desktop-m) {
+                width: 18vw;
+            }
+
+            @include responsive(desktop-s) {
+                width: 21vw;
+            }
+
+            @include responsive(tablet) {
+                margin: 10px 0;
+                width: 100%;
+            }
+
+            @include responsive(phone) {
+                padding: 0;
+                //margin: 0;
+
+                min-width: 340px;
+            }
+        }
+    }
+
+    .investor-small-font {
+        padding-top: 50px;
+        font-size: 0.9rem;
+        font-family: 'Poppins Bold';
+
+        @include responsive(tablet) {
+            font-size: 1.2rem;
+        }
+    }
+
+    .investor-tiny-font {
+        padding: 0 20px 30px 20px;
+        font-size: 0.8rem;
+
+        @include responsive(lapDeskTop) {
+            padding: 0 10px 30px 10px;
+        }
+
+        @include responsive(tablet) {
+            font-size: 1.3rem;
+        }
+    }
+}
